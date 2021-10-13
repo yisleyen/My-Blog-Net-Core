@@ -47,14 +47,7 @@
                     <div class="tech-btm">
                         <img src="~/_theme/images/banner1.jpg" class="img-fluid" alt="">
                     </div>
-                    <div class="tech-btm">
-                        <h4>Sign up to our newsletter</h4>
-                        <p>Pellentesque dui, non felis. Maecenas male </p>
-                        <form action="#" method="post">
-                            <input type="email" placeholder="Email" required="">
-                            <input type="submit" value="Subscribe">
-                        </form>
-                    </div>
+                    @await Html.PartialAsync("~/Views/Newsletter/Subscribe.cshtml")
                     @await Component.InvokeAsync("CategoryList")
                     @await Component.InvokeAsync("WritersLastBlogs", new { id = ViewBag.WriterId })
                     <div class="single-gd my-5 tech-btm">
