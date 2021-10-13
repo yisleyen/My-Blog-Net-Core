@@ -166,3 +166,4 @@ C:\Yusuf\project\MyBlog\WebUI\bin\Debug\net5.0\FluentValidation.AspNetCore.dll
 C:\Yusuf\project\MyBlog\WebUI\bin\Debug\net5.0\FluentValidation.DependencyInjectionExtensions.dll
 C:\Yusuf\project\MyBlog\WebUI\obj\Debug\net5.0\WebUI.MvcApplicationPartsAssemblyInfo.cs
 C:\Yusuf\project\MyBlog\WebUI\obj\Debug\net5.0\Razor\Views\Login\Index.cshtml.g.cs
+C:\Yusuf\project\MyBlog\WebUI\obj\Debug\net5.0\Razor\Views\Shared\Components\WritersLastBlogs\Default.cshtml.g.cs

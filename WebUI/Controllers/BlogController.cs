@@ -25,6 +25,8 @@ namespace WebUI.Controllers
 
             var blog = blogManager.GetById(id);
 
+            ViewBag.WriterId = blog.WriterId;
+
             return View(blog);
         }
     }
