@@ -169,3 +169,5 @@ C:\Yusuf\project\MyBlog\WebUI\obj\Debug\net5.0\Razor\Views\Login\Index.cshtml.g.
 C:\Yusuf\project\MyBlog\WebUI\obj\Debug\net5.0\Razor\Views\Shared\Components\WritersLastBlogs\Default.cshtml.g.cs
 C:\Yusuf\project\MyBlog\WebUI\obj\Debug\net5.0\Razor\Views\Newsletter\Subscribe.cshtml.g.cs
 C:\Yusuf\project\MyBlog\WebUI\obj\Debug\net5.0\Razor\Views\ErrorPage\Error.cshtml.g.cs
+C:\Yusuf\project\MyBlog\WebUI\obj\Debug\net5.0\Razor\Views\About\Index.cshtml.g.cs
+C:\Yusuf\project\MyBlog\WebUI\obj\Debug\net5.0\Razor\Views\About\SocialMedia.cshtml.g.cs
