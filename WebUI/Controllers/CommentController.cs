@@ -1,5 +1,6 @@
 ﻿using Business.Concrete;
 using DataAccess.EntityFramework;
+using Entity.Concrete;
 using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
@@ -22,8 +23,13 @@ namespace WebUI.Controllers
             return PartialView();
         }
 
-        public PartialViewResult AddCommentByBlogId()
+        [HttpPost]
+        public PartialViewResult AddCommentByBlogId(Comment comment)
         {
+            comment.Status = true;
+            comment.CreatedDate = DateTime.Now;
+            comment.BlogId = 3;
+            commentManager.Insert(comment);
             return PartialView();
         }
     }
