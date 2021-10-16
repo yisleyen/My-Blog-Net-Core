@@ -47,7 +47,10 @@
                     <div class="tech-btm">
                         <img src="~/_theme/images/banner1.jpg" class="img-fluid" alt="">
                     </div>
-                    @await Html.PartialAsync("~/Views/Newsletter/Subscribe.cshtml")
+                    <div class="tech-btm">
+                        <h4>Haber bültenimize kaydolun</h4>
+                        @await Html.PartialAsync("~/Views/Newsletter/Subscribe.cshtml")
+                    </div>
                     @await Component.InvokeAsync("CategoryList")
                     @await Component.InvokeAsync("WritersLastBlogs", new { id = ViewBag.WriterId })
                     <div class="single-gd my-5 tech-btm">

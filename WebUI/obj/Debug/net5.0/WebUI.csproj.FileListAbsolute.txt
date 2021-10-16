@@ -171,3 +171,4 @@ C:\Yusuf\project\MyBlog\WebUI\obj\Debug\net5.0\Razor\Views\Newsletter\Subscribe.
 C:\Yusuf\project\MyBlog\WebUI\obj\Debug\net5.0\Razor\Views\ErrorPage\Error.cshtml.g.cs
 C:\Yusuf\project\MyBlog\WebUI\obj\Debug\net5.0\Razor\Views\About\Index.cshtml.g.cs
 C:\Yusuf\project\MyBlog\WebUI\obj\Debug\net5.0\Razor\Views\About\SocialMedia.cshtml.g.cs
+C:\Yusuf\project\MyBlog\WebUI\obj\Debug\net5.0\Razor\Views\Contact\Index.cshtml.g.cs

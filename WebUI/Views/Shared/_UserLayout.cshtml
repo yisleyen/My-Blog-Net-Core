@@ -23,6 +23,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
     </script>
     <link href="~/_theme/css/bootstrap.css" rel='stylesheet' type='text/css' />
     <link rel="stylesheet" href="~/_theme/css/single.css">
+    <link href="~/_theme/css/contact.css" rel='stylesheet' type='text/css' />
     <link href="~/_theme/css/style.css" rel='stylesheet' type='text/css' />
     <link href="~/_theme/css/fontawesome-all.css" rel="stylesheet">
     <link href="//fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800"
@@ -30,14 +31,12 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 </head>
 
 <body>
-    <!--Header-->
-
     <header>
         <div class="top-bar_sub_w3layouts container-fluid">
             <div class="row">
                 <div class="col-md-4 logo text-left">
-                    <a class="navbar-brand" href="index.html">
-                        <i class="fab fa-linode"></i> Weblog
+                    <a class="navbar-brand" href="/Blog/Index">
+                        <i class="fab fa-linode"></i> WebUI
                     </a>
                 </div>
                 @await Html.PartialAsync("LoginPartial")
@@ -73,27 +72,9 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
         </div>
         @await Html.PartialAsync("MenuPartial")
     </header>
-    <!--//header-->
-    <!--/banner-->
-    <div class="banner-inner">
-    </div>
-    <ol class="breadcrumb">
-        <li class="breadcrumb-item">
-            <a href="index.html">Home</a>
-        </li>
-        <li class="breadcrumb-item active">Blog3</li>
-    </ol>
-    <!--//banner-->
-    <!--/main-->
     @RenderBody()
-    <!--//main-->
-    <!--footer-->
     @await Html.PartialAsync("FooterPartial")
-    <!---->
-    <!-- js -->
     <script src="~/_theme/js/jquery-2.2.3.min.js"></script>
-    <!-- //js -->
-    <!--/ start-smoth-scrolling -->
     <script src="~/_theme/js/move-top.js"></script>
     <script src="~/_theme/js/easing.js"></script>
     <script>
@@ -106,8 +87,6 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
             });
         });
     </script>
-    <!--// end-smoth-scrolling -->
-
     <script>
         $(document).ready(function () {
             /*
@@ -128,7 +107,6 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
     <a href="#home" class="scroll" id="toTop" style="display: block;">
         <span id="toTopHover" style="opacity: 1;"> </span>
     </a>
-    <!-- //Custom-JavaScript-File-Links -->
     <script src="~/_theme/js/bootstrap.js"></script>
 
 </body>
