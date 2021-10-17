@@ -174,3 +174,5 @@ C:\Yusuf\project\MyBlog\WebUI\obj\Debug\net5.0\Razor\Views\About\SocialMedia.csh
 C:\Yusuf\project\MyBlog\WebUI\obj\Debug\net5.0\Razor\Views\Contact\Index.cshtml.g.cs
 C:\Yusuf\project\MyBlog\WebUI\obj\Debug\net5.0\Razor\Views\Writer\Index.cshtml.g.cs
 C:\Yusuf\project\MyBlog\WebUI\obj\Debug\net5.0\Razor\Views\Shared\Components\LatestBlogPosts\Default.cshtml.g.cs
+C:\Yusuf\project\MyBlog\WebUI\obj\Debug\net5.0\Razor\Views\Shared\_WriterLayout.cshtml.g.cs
+C:\Yusuf\project\MyBlog\WebUI\obj\Debug\net5.0\Razor\Views\Writer\Test.cshtml.g.cs
