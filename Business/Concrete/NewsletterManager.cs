@@ -18,9 +18,29 @@ namespace Business.Concrete
             _newsletterDal = newsletterDal;
         }
 
+        public void Delete(Newsletter entity)
+        {
+            _newsletterDal.Delete(entity);
+        }
+
+        public List<Newsletter> GetAll()
+        {
+            return _newsletterDal.GetAll();
+        }
+
+        public Newsletter GetById(int id)
+        {
+            return _newsletterDal.GetById(id);
+        }
+
         public void Insert(Newsletter newsletter)
         {
             _newsletterDal.Insert(newsletter);
+        }
+
+        public void Update(Newsletter entity)
+        {
+            _newsletterDal.Update(newsletter);
         }
     }
 }
