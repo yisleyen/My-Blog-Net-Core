@@ -1,23 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Yusuf\\project\\MyBlog\\WebUI\\WebUI.csproj": {}
+    "C:\\Yusuf\\me\\My-Blog-Net-Core\\WebUI\\WebUI.csproj": {}
   },
   "projects": {
-    "C:\\Yusuf\\project\\MyBlog\\Business\\Business.csproj": {
+    "C:\\Yusuf\\me\\My-Blog-Net-Core\\Business\\Business.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Yusuf\\project\\MyBlog\\Business\\Business.csproj",
+        "projectUniqueName": "C:\\Yusuf\\me\\My-Blog-Net-Core\\Business\\Business.csproj",
         "projectName": "Business",
-        "projectPath": "C:\\Yusuf\\project\\MyBlog\\Business\\Business.csproj",
-        "packagesPath": "C:\\Users\\yusuf\\.nuget\\packages\\",
-        "outputPath": "C:\\Yusuf\\project\\MyBlog\\Business\\obj\\",
+        "projectPath": "C:\\Yusuf\\me\\My-Blog-Net-Core\\Business\\Business.csproj",
+        "packagesPath": "C:\\Users\\Yusuf\\.nuget\\packages\\",
+        "outputPath": "C:\\Yusuf\\me\\My-Blog-Net-Core\\Business\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\yusuf\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Yusuf\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -31,11 +28,11 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\Yusuf\\project\\MyBlog\\DataAccess\\DataAccess.csproj": {
-                "projectPath": "C:\\Yusuf\\project\\MyBlog\\DataAccess\\DataAccess.csproj"
+              "C:\\Yusuf\\me\\My-Blog-Net-Core\\DataAccess\\DataAccess.csproj": {
+                "projectPath": "C:\\Yusuf\\me\\My-Blog-Net-Core\\DataAccess\\DataAccess.csproj"
               },
-              "C:\\Yusuf\\project\\MyBlog\\Entities\\Entity.csproj": {
-                "projectPath": "C:\\Yusuf\\project\\MyBlog\\Entities\\Entity.csproj"
+              "C:\\Yusuf\\me\\My-Blog-Net-Core\\Entities\\Entity.csproj": {
+                "projectPath": "C:\\Yusuf\\me\\My-Blog-Net-Core\\Entities\\Entity.csproj"
               }
             }
           }
@@ -70,24 +67,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.303\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.402\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Yusuf\\project\\MyBlog\\DataAccess\\DataAccess.csproj": {
+    "C:\\Yusuf\\me\\My-Blog-Net-Core\\DataAccess\\DataAccess.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Yusuf\\project\\MyBlog\\DataAccess\\DataAccess.csproj",
+        "projectUniqueName": "C:\\Yusuf\\me\\My-Blog-Net-Core\\DataAccess\\DataAccess.csproj",
         "projectName": "DataAccess",
-        "projectPath": "C:\\Yusuf\\project\\MyBlog\\DataAccess\\DataAccess.csproj",
-        "packagesPath": "C:\\Users\\yusuf\\.nuget\\packages\\",
-        "outputPath": "C:\\Yusuf\\project\\MyBlog\\DataAccess\\obj\\",
+        "projectPath": "C:\\Yusuf\\me\\My-Blog-Net-Core\\DataAccess\\DataAccess.csproj",
+        "packagesPath": "C:\\Users\\Yusuf\\.nuget\\packages\\",
+        "outputPath": "C:\\Yusuf\\me\\My-Blog-Net-Core\\DataAccess\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\yusuf\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Yusuf\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -101,8 +95,8 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\Yusuf\\project\\MyBlog\\Entities\\Entity.csproj": {
-                "projectPath": "C:\\Yusuf\\project\\MyBlog\\Entities\\Entity.csproj"
+              "C:\\Yusuf\\me\\My-Blog-Net-Core\\Entities\\Entity.csproj": {
+                "projectPath": "C:\\Yusuf\\me\\My-Blog-Net-Core\\Entities\\Entity.csproj"
               }
             }
           }
@@ -153,24 +147,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.303\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.402\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Yusuf\\project\\MyBlog\\Entities\\Entity.csproj": {
+    "C:\\Yusuf\\me\\My-Blog-Net-Core\\Entities\\Entity.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Yusuf\\project\\MyBlog\\Entities\\Entity.csproj",
+        "projectUniqueName": "C:\\Yusuf\\me\\My-Blog-Net-Core\\Entities\\Entity.csproj",
         "projectName": "Entity",
-        "projectPath": "C:\\Yusuf\\project\\MyBlog\\Entities\\Entity.csproj",
-        "packagesPath": "C:\\Users\\yusuf\\.nuget\\packages\\",
-        "outputPath": "C:\\Yusuf\\project\\MyBlog\\Entities\\obj\\",
+        "projectPath": "C:\\Yusuf\\me\\My-Blog-Net-Core\\Entities\\Entity.csproj",
+        "packagesPath": "C:\\Users\\Yusuf\\.nuget\\packages\\",
+        "outputPath": "C:\\Yusuf\\me\\My-Blog-Net-Core\\Entities\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\yusuf\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Yusuf\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -210,24 +201,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.303\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.402\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Yusuf\\project\\MyBlog\\WebUI\\WebUI.csproj": {
+    "C:\\Yusuf\\me\\My-Blog-Net-Core\\WebUI\\WebUI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Yusuf\\project\\MyBlog\\WebUI\\WebUI.csproj",
+        "projectUniqueName": "C:\\Yusuf\\me\\My-Blog-Net-Core\\WebUI\\WebUI.csproj",
         "projectName": "WebUI",
-        "projectPath": "C:\\Yusuf\\project\\MyBlog\\WebUI\\WebUI.csproj",
-        "packagesPath": "C:\\Users\\yusuf\\.nuget\\packages\\",
-        "outputPath": "C:\\Yusuf\\project\\MyBlog\\WebUI\\obj\\",
+        "projectPath": "C:\\Yusuf\\me\\My-Blog-Net-Core\\WebUI\\WebUI.csproj",
+        "packagesPath": "C:\\Users\\Yusuf\\.nuget\\packages\\",
+        "outputPath": "C:\\Yusuf\\me\\My-Blog-Net-Core\\WebUI\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\yusuf\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Yusuf\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -241,14 +229,14 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\Yusuf\\project\\MyBlog\\Business\\Business.csproj": {
-                "projectPath": "C:\\Yusuf\\project\\MyBlog\\Business\\Business.csproj"
+              "C:\\Yusuf\\me\\My-Blog-Net-Core\\Business\\Business.csproj": {
+                "projectPath": "C:\\Yusuf\\me\\My-Blog-Net-Core\\Business\\Business.csproj"
               },
-              "C:\\Yusuf\\project\\MyBlog\\DataAccess\\DataAccess.csproj": {
-                "projectPath": "C:\\Yusuf\\project\\MyBlog\\DataAccess\\DataAccess.csproj"
+              "C:\\Yusuf\\me\\My-Blog-Net-Core\\DataAccess\\DataAccess.csproj": {
+                "projectPath": "C:\\Yusuf\\me\\My-Blog-Net-Core\\DataAccess\\DataAccess.csproj"
               },
-              "C:\\Yusuf\\project\\MyBlog\\Entities\\Entity.csproj": {
-                "projectPath": "C:\\Yusuf\\project\\MyBlog\\Entities\\Entity.csproj"
+              "C:\\Yusuf\\me\\My-Blog-Net-Core\\Entities\\Entity.csproj": {
+                "projectPath": "C:\\Yusuf\\me\\My-Blog-Net-Core\\Entities\\Entity.csproj"
               }
             }
           }
@@ -310,7 +298,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.303\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.402\\RuntimeIdentifierGraph.json"
         }
       }
     }

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "dMTHpd6sChVyK1cBKje2B9rP+ltLItbF4amziTjN93qV53+fO/6Uu3NWJ5OOoszoIyV0RgbRrZGoVTll/blVqg==",
+  "dgSpecHash": "tyHyUfcMURZ4wFQ9bzJ8nga9nIdeDM6gjT72rYqiZv2IQIeSsOQe3K7Xf5cX5z7R3x/JBMdWbVyUP179L9tqLw==",
   "success": true,
-  "projectFilePath": "C:\\Yusuf\\project\\MyBlog\\Entities\\Entity.csproj",
+  "projectFilePath": "C:\\Yusuf\\me\\My-Blog-Net-Core\\Entities\\Entity.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

@@ -10,3 +10,15 @@ C:\Yusuf\project\MyBlog\Core\obj\Debug\net5.0\Core.csproj.CoreCompileInputs.cach
 C:\Yusuf\project\MyBlog\Core\obj\Debug\net5.0\Core.dll
 C:\Yusuf\project\MyBlog\Core\obj\Debug\net5.0\ref\Core.dll
 C:\Yusuf\project\MyBlog\Core\obj\Debug\net5.0\Core.pdb
+C:\Yusuf\me\My-Blog-Net-Core\Core\bin\Debug\net5.0\Core.deps.json
+C:\Yusuf\me\My-Blog-Net-Core\Core\bin\Debug\net5.0\Core.dll
+C:\Yusuf\me\My-Blog-Net-Core\Core\bin\Debug\net5.0\ref\Core.dll
+C:\Yusuf\me\My-Blog-Net-Core\Core\bin\Debug\net5.0\Core.pdb
+C:\Yusuf\me\My-Blog-Net-Core\Core\obj\Debug\net5.0\Core.csproj.AssemblyReference.cache
+C:\Yusuf\me\My-Blog-Net-Core\Core\obj\Debug\net5.0\Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Yusuf\me\My-Blog-Net-Core\Core\obj\Debug\net5.0\Core.AssemblyInfoInputs.cache
+C:\Yusuf\me\My-Blog-Net-Core\Core\obj\Debug\net5.0\Core.AssemblyInfo.cs
+C:\Yusuf\me\My-Blog-Net-Core\Core\obj\Debug\net5.0\Core.csproj.CoreCompileInputs.cache
+C:\Yusuf\me\My-Blog-Net-Core\Core\obj\Debug\net5.0\Core.dll
+C:\Yusuf\me\My-Blog-Net-Core\Core\obj\Debug\net5.0\ref\Core.dll
+C:\Yusuf\me\My-Blog-Net-Core\Core\obj\Debug\net5.0\Core.pdb
