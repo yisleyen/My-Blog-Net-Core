@@ -5794,19 +5794,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Yusuf\\.nuget\\packages\\": {}
+    "C:\\Users\\yusuf\\.nuget\\packages\\": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Yusuf\\me\\My-Blog-Net-Core\\Business\\Business.csproj",
+      "projectUniqueName": "C:\\Yusuf\\project\\MyBlog\\Business\\Business.csproj",
       "projectName": "Business",
-      "projectPath": "C:\\Yusuf\\me\\My-Blog-Net-Core\\Business\\Business.csproj",
-      "packagesPath": "C:\\Users\\Yusuf\\.nuget\\packages\\",
-      "outputPath": "C:\\Yusuf\\me\\My-Blog-Net-Core\\Business\\obj\\",
+      "projectPath": "C:\\Yusuf\\project\\MyBlog\\Business\\Business.csproj",
+      "packagesPath": "C:\\Users\\yusuf\\.nuget\\packages\\",
+      "outputPath": "C:\\Yusuf\\project\\MyBlog\\Business\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+      ],
       "configFilePaths": [
-        "C:\\Users\\Yusuf\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\yusuf\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -5820,11 +5824,11 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "C:\\Yusuf\\me\\My-Blog-Net-Core\\DataAccess\\DataAccess.csproj": {
-              "projectPath": "C:\\Yusuf\\me\\My-Blog-Net-Core\\DataAccess\\DataAccess.csproj"
+            "C:\\Yusuf\\project\\MyBlog\\DataAccess\\DataAccess.csproj": {
+              "projectPath": "C:\\Yusuf\\project\\MyBlog\\DataAccess\\DataAccess.csproj"
             },
-            "C:\\Yusuf\\me\\My-Blog-Net-Core\\Entities\\Entity.csproj": {
-              "projectPath": "C:\\Yusuf\\me\\My-Blog-Net-Core\\Entities\\Entity.csproj"
+            "C:\\Yusuf\\project\\MyBlog\\Entities\\Entity.csproj": {
+              "projectPath": "C:\\Yusuf\\project\\MyBlog\\Entities\\Entity.csproj"
             }
           }
         }
@@ -5859,7 +5863,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.402\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.303\\RuntimeIdentifierGraph.json"
       }
     }
   }

@@ -33,14 +33,14 @@ namespace Business.Concrete
             return _newsletterDal.GetById(id);
         }
 
-        public void Insert(Newsletter newsletter)
+        public void Insert(Newsletter entity)
         {
-            _newsletterDal.Insert(newsletter);
+            _newsletterDal.Insert(entity);
         }
 
         public void Update(Newsletter entity)
         {
-            _newsletterDal.Update(newsletter);
+            _newsletterDal.Update(entity);
         }
     }
 }
