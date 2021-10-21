@@ -358,3 +358,7 @@ C:\Yusuf\me\My-Blog-Net-Core\WebUI\obj\Debug\net5.0\Razor\Views\Writer\NavBarPar
 C:\Yusuf\me\My-Blog-Net-Core\WebUI\obj\Debug\net5.0\Razor\Views\Writer\FooterPartial.cshtml.g.cs
 C:\Yusuf\me\My-Blog-Net-Core\WebUI\obj\Debug\net5.0\Razor\Views\Shared\Components\WriterMessageNotification\Default.cshtml.g.cs
 C:\Yusuf\me\My-Blog-Net-Core\WebUI\obj\Debug\net5.0\Razor\Views\Shared\Components\WriterNotification\Default.cshtml.g.cs
+C:\Yusuf\project\MyBlog\WebUI\obj\Debug\net5.0\Razor\Views\Shared\Components\WriterMessageNotification\Default.cshtml.g.cs
+C:\Yusuf\project\MyBlog\WebUI\obj\Debug\net5.0\Razor\Views\Shared\Components\WriterNotification\Default.cshtml.g.cs
+C:\Yusuf\project\MyBlog\WebUI\obj\Debug\net5.0\Razor\Views\Writer\FooterPartial.cshtml.g.cs
+C:\Yusuf\project\MyBlog\WebUI\obj\Debug\net5.0\Razor\Views\Writer\NavBarPartial.cshtml.g.cs

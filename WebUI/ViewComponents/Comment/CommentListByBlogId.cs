@@ -16,6 +16,15 @@ namespace WebUI.ViewComponets.Comment
         {
             var commentList = commentManager.GetAll(id);
 
+            if (commentList.Count == 0)
+            {
+                ViewBag.Message = "Henüz yorum yapılmamış. İlk yorumu siz yapabilirsiniz.";
+            }
+            else
+            {
+                ViewBag.Message = null;
+            }
+
             return View(commentList);
         }
     }

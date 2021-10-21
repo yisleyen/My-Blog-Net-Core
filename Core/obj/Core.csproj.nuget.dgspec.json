@@ -1,20 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Yusuf\\me\\My-Blog-Net-Core\\Core\\Core.csproj": {}
+    "C:\\Yusuf\\project\\MyBlog\\Core\\Core.csproj": {}
   },
   "projects": {
-    "C:\\Yusuf\\me\\My-Blog-Net-Core\\Core\\Core.csproj": {
+    "C:\\Yusuf\\project\\MyBlog\\Core\\Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Yusuf\\me\\My-Blog-Net-Core\\Core\\Core.csproj",
+        "projectUniqueName": "C:\\Yusuf\\project\\MyBlog\\Core\\Core.csproj",
         "projectName": "Core",
-        "projectPath": "C:\\Yusuf\\me\\My-Blog-Net-Core\\Core\\Core.csproj",
-        "packagesPath": "C:\\Users\\Yusuf\\.nuget\\packages\\",
-        "outputPath": "C:\\Yusuf\\me\\My-Blog-Net-Core\\Core\\obj\\",
+        "projectPath": "C:\\Yusuf\\project\\MyBlog\\Core\\Core.csproj",
+        "packagesPath": "C:\\Users\\yusuf\\.nuget\\packages\\",
+        "outputPath": "C:\\Yusuf\\project\\MyBlog\\Core\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Yusuf\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\yusuf\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -54,7 +57,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.402\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.303\\RuntimeIdentifierGraph.json"
         }
       }
     }
