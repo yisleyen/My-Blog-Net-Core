@@ -57,5 +57,10 @@ namespace Business.Concrete
         {
             return _blogDal.GetAll().Take(3).ToList();
         }
+
+        public List<Blog> GetAllWithCategoryByWriter(int id)
+        {
+            return _blogDal.GetAllWithCategoryByWriter(id);
+        }
     }
 }

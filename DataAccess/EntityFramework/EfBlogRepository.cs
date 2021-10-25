@@ -20,5 +20,13 @@ namespace DataAccess.EntityFramework
                 return c.Blogs.Include(x => x.Category).ToList();
             }
         }
+
+        public List<Blog> GetAllWithCategoryByWriter(int id)
+        {
+            using (Context c = new Context())
+            {
+                return c.Blogs.Include(x => x.Category).Where(x => x.WriterId == id).ToList();
+            }
+        }
     }
 }

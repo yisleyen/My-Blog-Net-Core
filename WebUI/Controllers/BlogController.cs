@@ -40,7 +40,7 @@ namespace WebUI.Controllers
         [AllowAnonymous]
         public IActionResult WriterBlogList()
         {
-            var blogList = blogManager.GetAllByWriter(4);
+            var blogList = blogManager.GetAllWithCategoryByWriter(4);
 
             return View(blogList);
         }
