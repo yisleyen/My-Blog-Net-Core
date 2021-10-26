@@ -42,7 +42,7 @@
                                         <span class="badge badge-secondary">Pasif</span>
                                     }
                                 </td>
-                                <td><a href="" class="btn btn-danger btn-fw">Sil</a> <a href="" class="btn btn-warning btn-fw">Düzenle</a></td>
+                                <td><a href="/Blog/Delete/@item.Id" onclick="return confirm('Silmek istediğinize emin misiniz?')" class="btn btn-danger btn-fw">Sil</a> <a href="/Blog/Edit/@item.Id"  class="btn btn-warning btn-fw">Düzenle</a></td>
                             </tr>
                         }
                     </tbody>
@@ -52,4 +52,4 @@
     </div>
 </div>
 
-<a href="" class="btn btn-primary btn-fw">Yeni Yazı</a>
+<a href="/Blog/Add" class="btn btn-primary btn-fw">Yeni Yazı</a>

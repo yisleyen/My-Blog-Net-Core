@@ -87,5 +87,58 @@ namespace WebUI.Controllers
 
             return View();
         }
+
+        [AllowAnonymous]
+        public IActionResult Delete(int id)
+        {
+            var blog = blogManager.GetById(id);
+
+            blogManager.Delete(blog);
+
+            return RedirectToAction("WriterBlogList", "Blog");
+        }
+
+        [AllowAnonymous]
+        [HttpGet]
+        public IActionResult Edit(int id)
+        {
+            CategoryManager categoryManager = new CategoryManager(new EfCategoryRepository());
+            List<SelectListItem> categoryList = (from x in categoryManager.GetAll()
+                                                 select new SelectListItem
+                                                 {
+                                                     Text = x.Name,
+                                                     Value = x.Id.ToString()
+                                                 }).ToList();
+            ViewBag.CategorySelectList = categoryList;
+
+            var blog = blogManager.GetById(id);
+
+            return View(blog);
+        }
+
+        [AllowAnonymous]
+        [HttpPost]
+        public IActionResult Edit(Blog blog)
+        {
+            BlogValidator blogValidator = new BlogValidator();
+            ValidationResult validationResult = blogValidator.Validate(blog);
+
+            if (validationResult.IsValid)
+            {
+                blog.Status = true;
+                blogManager.Update(blog);
+
+                return RedirectToAction("WriterBlogList", "Blog");
+            }
+            else
+            {
+                foreach (var item in validationResult.Errors)
+                {
+                    ModelState.AddModelError(item.PropertyName, item.ErrorMessage);
+                }
+            }
+
+            return View();
+        }
     }
 }

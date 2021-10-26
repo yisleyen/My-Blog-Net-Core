@@ -1,18 +1,21 @@
 ﻿@model Entity.Concrete.Blog
 @{
-    ViewData["Title"] = "Add";
+    ViewData["Title"] = "Edit";
     Layout = "~/Views/Shared/_WriterLayout.cshtml";
 }
 
 <div class="page-header">
-    <h3 class="page-title">Yeni Yazı</h3>
+    <h3 class="page-title">Yeni Düzenle</h3>
 </div>
 <div class="row">
     <div class="col-12 grid-margin stretch-card">
         <div class="card">
             <div class="card-body">
-                @using (Html.BeginForm("Add", "Blog", FormMethod.Post))
+                @using (Html.BeginForm("Edit", "Blog", FormMethod.Post))
                 {
+                    @Html.TextBoxFor(x => x.Id, new { type = "hidden" })
+                    @Html.TextBoxFor(x => x.CreatedDate, new { type = "hidden" })
+                    @Html.TextBoxFor(x => x.WriterId, new { type = "hidden" })
                     <div class="form-group">
                         @Html.Label("Başlık")
                         @Html.TextBoxFor(x => x.Title, new { placeholder = "Başlık", @class = "form-control" })
@@ -38,7 +41,7 @@
                         @Html.DropDownListFor(x => x.CategoryId, (List<SelectListItem>)ViewBag.CategorySelectList, new { @class = "form-control" })
                         @Html.ValidationMessageFor(x => x.CategoryId, "", new { @class = "text-danger" })
                     </div>
-                    <button type="submit" class="btn btn-gradient-primary mr-2">Ekle</button>
+                    <button type="submit" class="btn btn-gradient-primary mr-2">Güncelle</button>
                 }
             </div>
         </div>
