@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Yusuf\\project\\MyBlog\\WebUI\\WebUI.csproj": {}
+    "C:\\Yusuf\\project\\My-Blog-Net-Core\\WebUI\\WebUI.csproj": {}
   },
   "projects": {
-    "C:\\Yusuf\\project\\MyBlog\\Business\\Business.csproj": {
+    "C:\\Yusuf\\project\\My-Blog-Net-Core\\Business\\Business.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Yusuf\\project\\MyBlog\\Business\\Business.csproj",
+        "projectUniqueName": "C:\\Yusuf\\project\\My-Blog-Net-Core\\Business\\Business.csproj",
         "projectName": "Business",
-        "projectPath": "C:\\Yusuf\\project\\MyBlog\\Business\\Business.csproj",
+        "projectPath": "C:\\Yusuf\\project\\My-Blog-Net-Core\\Business\\Business.csproj",
         "packagesPath": "C:\\Users\\yusuf\\.nuget\\packages\\",
-        "outputPath": "C:\\Yusuf\\project\\MyBlog\\Business\\obj\\",
+        "outputPath": "C:\\Yusuf\\project\\My-Blog-Net-Core\\Business\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -31,11 +31,11 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\Yusuf\\project\\MyBlog\\DataAccess\\DataAccess.csproj": {
-                "projectPath": "C:\\Yusuf\\project\\MyBlog\\DataAccess\\DataAccess.csproj"
+              "C:\\Yusuf\\project\\My-Blog-Net-Core\\DataAccess\\DataAccess.csproj": {
+                "projectPath": "C:\\Yusuf\\project\\My-Blog-Net-Core\\DataAccess\\DataAccess.csproj"
               },
-              "C:\\Yusuf\\project\\MyBlog\\Entities\\Entity.csproj": {
-                "projectPath": "C:\\Yusuf\\project\\MyBlog\\Entities\\Entity.csproj"
+              "C:\\Yusuf\\project\\My-Blog-Net-Core\\Entities\\Entity.csproj": {
+                "projectPath": "C:\\Yusuf\\project\\My-Blog-Net-Core\\Entities\\Entity.csproj"
               }
             }
           }
@@ -74,14 +74,14 @@
         }
       }
     },
-    "C:\\Yusuf\\project\\MyBlog\\DataAccess\\DataAccess.csproj": {
+    "C:\\Yusuf\\project\\My-Blog-Net-Core\\DataAccess\\DataAccess.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Yusuf\\project\\MyBlog\\DataAccess\\DataAccess.csproj",
+        "projectUniqueName": "C:\\Yusuf\\project\\My-Blog-Net-Core\\DataAccess\\DataAccess.csproj",
         "projectName": "DataAccess",
-        "projectPath": "C:\\Yusuf\\project\\MyBlog\\DataAccess\\DataAccess.csproj",
+        "projectPath": "C:\\Yusuf\\project\\My-Blog-Net-Core\\DataAccess\\DataAccess.csproj",
         "packagesPath": "C:\\Users\\yusuf\\.nuget\\packages\\",
-        "outputPath": "C:\\Yusuf\\project\\MyBlog\\DataAccess\\obj\\",
+        "outputPath": "C:\\Yusuf\\project\\My-Blog-Net-Core\\DataAccess\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -101,8 +101,8 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\Yusuf\\project\\MyBlog\\Entities\\Entity.csproj": {
-                "projectPath": "C:\\Yusuf\\project\\MyBlog\\Entities\\Entity.csproj"
+              "C:\\Yusuf\\project\\My-Blog-Net-Core\\Entities\\Entity.csproj": {
+                "projectPath": "C:\\Yusuf\\project\\My-Blog-Net-Core\\Entities\\Entity.csproj"
               }
             }
           }
@@ -157,14 +157,14 @@
         }
       }
     },
-    "C:\\Yusuf\\project\\MyBlog\\Entities\\Entity.csproj": {
+    "C:\\Yusuf\\project\\My-Blog-Net-Core\\Entities\\Entity.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Yusuf\\project\\MyBlog\\Entities\\Entity.csproj",
+        "projectUniqueName": "C:\\Yusuf\\project\\My-Blog-Net-Core\\Entities\\Entity.csproj",
         "projectName": "Entity",
-        "projectPath": "C:\\Yusuf\\project\\MyBlog\\Entities\\Entity.csproj",
+        "projectPath": "C:\\Yusuf\\project\\My-Blog-Net-Core\\Entities\\Entity.csproj",
         "packagesPath": "C:\\Users\\yusuf\\.nuget\\packages\\",
-        "outputPath": "C:\\Yusuf\\project\\MyBlog\\Entities\\obj\\",
+        "outputPath": "C:\\Yusuf\\project\\My-Blog-Net-Core\\Entities\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -214,14 +214,14 @@
         }
       }
     },
-    "C:\\Yusuf\\project\\MyBlog\\WebUI\\WebUI.csproj": {
+    "C:\\Yusuf\\project\\My-Blog-Net-Core\\WebUI\\WebUI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Yusuf\\project\\MyBlog\\WebUI\\WebUI.csproj",
+        "projectUniqueName": "C:\\Yusuf\\project\\My-Blog-Net-Core\\WebUI\\WebUI.csproj",
         "projectName": "WebUI",
-        "projectPath": "C:\\Yusuf\\project\\MyBlog\\WebUI\\WebUI.csproj",
+        "projectPath": "C:\\Yusuf\\project\\My-Blog-Net-Core\\WebUI\\WebUI.csproj",
         "packagesPath": "C:\\Users\\yusuf\\.nuget\\packages\\",
-        "outputPath": "C:\\Yusuf\\project\\MyBlog\\WebUI\\obj\\",
+        "outputPath": "C:\\Yusuf\\project\\My-Blog-Net-Core\\WebUI\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -241,14 +241,14 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\Yusuf\\project\\MyBlog\\Business\\Business.csproj": {
-                "projectPath": "C:\\Yusuf\\project\\MyBlog\\Business\\Business.csproj"
+              "C:\\Yusuf\\project\\My-Blog-Net-Core\\Business\\Business.csproj": {
+                "projectPath": "C:\\Yusuf\\project\\My-Blog-Net-Core\\Business\\Business.csproj"
               },
-              "C:\\Yusuf\\project\\MyBlog\\DataAccess\\DataAccess.csproj": {
-                "projectPath": "C:\\Yusuf\\project\\MyBlog\\DataAccess\\DataAccess.csproj"
+              "C:\\Yusuf\\project\\My-Blog-Net-Core\\DataAccess\\DataAccess.csproj": {
+                "projectPath": "C:\\Yusuf\\project\\My-Blog-Net-Core\\DataAccess\\DataAccess.csproj"
               },
-              "C:\\Yusuf\\project\\MyBlog\\Entities\\Entity.csproj": {
-                "projectPath": "C:\\Yusuf\\project\\MyBlog\\Entities\\Entity.csproj"
+              "C:\\Yusuf\\project\\My-Blog-Net-Core\\Entities\\Entity.csproj": {
+                "projectPath": "C:\\Yusuf\\project\\My-Blog-Net-Core\\Entities\\Entity.csproj"
               }
             }
           }

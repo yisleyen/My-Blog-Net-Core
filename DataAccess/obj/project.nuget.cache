@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "rMnRuD8ErJWQKVWXswrMhk+XmBOf48DwlbjaOEqcBLXiEfE2o+/c1ZYFfP5mvjyqNhoh5P21kefWcAoCcYku+w==",
+  "dgSpecHash": "blcDVKxGCpZBNREbA2C4wyswkHAokfBzhsOAndKw/6nwTTMQK/fn7rdD2eCzCRu1kfOZkRdiz7G5miFQS38RtA==",
   "success": true,
-  "projectFilePath": "C:\\Yusuf\\project\\MyBlog\\DataAccess\\DataAccess.csproj",
+  "projectFilePath": "C:\\Yusuf\\project\\My-Blog-Net-Core\\DataAccess\\DataAccess.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\yusuf\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\yusuf\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",

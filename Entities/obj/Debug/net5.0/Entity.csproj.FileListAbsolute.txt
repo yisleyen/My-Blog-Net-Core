@@ -22,3 +22,15 @@ C:\Yusuf\me\My-Blog-Net-Core\Entities\obj\Debug\net5.0\Entity.csproj.CoreCompile
 C:\Yusuf\me\My-Blog-Net-Core\Entities\obj\Debug\net5.0\Entity.dll
 C:\Yusuf\me\My-Blog-Net-Core\Entities\obj\Debug\net5.0\ref\Entity.dll
 C:\Yusuf\me\My-Blog-Net-Core\Entities\obj\Debug\net5.0\Entity.pdb
+C:\Yusuf\project\My-Blog-Net-Core\Entities\bin\Debug\net5.0\Entity.deps.json
+C:\Yusuf\project\My-Blog-Net-Core\Entities\bin\Debug\net5.0\Entity.dll
+C:\Yusuf\project\My-Blog-Net-Core\Entities\bin\Debug\net5.0\ref\Entity.dll
+C:\Yusuf\project\My-Blog-Net-Core\Entities\bin\Debug\net5.0\Entity.pdb
+C:\Yusuf\project\My-Blog-Net-Core\Entities\obj\Debug\net5.0\Entity.csproj.AssemblyReference.cache
+C:\Yusuf\project\My-Blog-Net-Core\Entities\obj\Debug\net5.0\Entity.GeneratedMSBuildEditorConfig.editorconfig
+C:\Yusuf\project\My-Blog-Net-Core\Entities\obj\Debug\net5.0\Entity.AssemblyInfoInputs.cache
+C:\Yusuf\project\My-Blog-Net-Core\Entities\obj\Debug\net5.0\Entity.AssemblyInfo.cs
+C:\Yusuf\project\My-Blog-Net-Core\Entities\obj\Debug\net5.0\Entity.csproj.CoreCompileInputs.cache
+C:\Yusuf\project\My-Blog-Net-Core\Entities\obj\Debug\net5.0\Entity.dll
+C:\Yusuf\project\My-Blog-Net-Core\Entities\obj\Debug\net5.0\ref\Entity.dll
+C:\Yusuf\project\My-Blog-Net-Core\Entities\obj\Debug\net5.0\Entity.pdb

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "o+ghY4SF/1bs93RNW5bLHvqFu82hKyvWYADY4gfkFR7L8FpOBFmuNJfcfWsFI3EI2pHTv8y1Km8D0Xc0TLW8GQ==",
+  "dgSpecHash": "RDt8/PpaqUrnCM0AaNz72+VWgq8Mb3OD12loKMmzWSe6bXSIRQEd8HW6ECeqxinVZdE6SohPdezE4QPaAHriRw==",
   "success": true,
-  "projectFilePath": "C:\\Yusuf\\project\\MyBlog\\WebUI\\WebUI.csproj",
+  "projectFilePath": "C:\\Yusuf\\project\\My-Blog-Net-Core\\WebUI\\WebUI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\yusuf\\.nuget\\packages\\fluentvalidation\\10.3.3\\fluentvalidation.10.3.3.nupkg.sha512",
     "C:\\Users\\yusuf\\.nuget\\packages\\fluentvalidation.aspnetcore\\10.3.3\\fluentvalidation.aspnetcore.10.3.3.nupkg.sha512",

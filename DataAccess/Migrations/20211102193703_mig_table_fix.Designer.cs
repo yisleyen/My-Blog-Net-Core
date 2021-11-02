@@ -10,7 +10,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace DataAccess.Migrations
 {
     [DbContext(typeof(Context))]
-    [Migration("20211102191341_mig_table_fix")]
+    [Migration("20211102193703_mig_table_fix")]
     partial class mig_table_fix
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

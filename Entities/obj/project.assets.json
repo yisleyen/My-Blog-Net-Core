@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Yusuf\\project\\MyBlog\\Entities\\Entity.csproj",
+      "projectUniqueName": "C:\\Yusuf\\project\\My-Blog-Net-Core\\Entities\\Entity.csproj",
       "projectName": "Entity",
-      "projectPath": "C:\\Yusuf\\project\\MyBlog\\Entities\\Entity.csproj",
+      "projectPath": "C:\\Yusuf\\project\\My-Blog-Net-Core\\Entities\\Entity.csproj",
       "packagesPath": "C:\\Users\\yusuf\\.nuget\\packages\\",
-      "outputPath": "C:\\Yusuf\\project\\MyBlog\\Entities\\obj\\",
+      "outputPath": "C:\\Yusuf\\project\\My-Blog-Net-Core\\Entities\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
