@@ -22,5 +22,6 @@ namespace DataAccess.Concrete
         public DbSet<Contact> Contacts { get; set; }
         public DbSet<Writer> Writers { get; set; }
         public DbSet<Newsletter> Newsletters { get; set; }
+        public DbSet<Rating> Ratings { get; set; }
     }
 }
