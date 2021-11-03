@@ -556,3 +556,4 @@ C:\Yusuf\project\My-Blog-Net-Core\WebUI\obj\Debug\net5.0\WebUI.dll
 C:\Yusuf\project\My-Blog-Net-Core\WebUI\obj\Debug\net5.0\ref\WebUI.dll
 C:\Yusuf\project\My-Blog-Net-Core\WebUI\obj\Debug\net5.0\WebUI.pdb
 C:\Yusuf\project\My-Blog-Net-Core\WebUI\obj\Debug\net5.0\WebUI.genruntimeconfig.cache
+C:\Yusuf\project\My-Blog-Net-Core\WebUI\obj\Debug\net5.0\Razor\Views\Shared\Components\WriterInfoOnDashboard\Default.cshtml.g.cs
