@@ -1,4 +1,6 @@
-﻿using Microsoft.AspNetCore.Authorization;
+﻿using Business.Abstract;
+using DataAccess.EntityFramework;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
@@ -9,6 +11,8 @@ namespace WebUI.Controllers
 {
     public class WriterController : Controller
     {
+        WriterManager writerManager = new WriterManager(new EfWriterRepository());
+
         public IActionResult Index()
         {
             return View();
@@ -28,6 +32,14 @@ namespace WebUI.Controllers
         public PartialViewResult FooterPartial()
         {
             return PartialView();
+        }
+
+        [AllowAnonymous]
+        public IActionResult EditProfile()
+        {
+            var writer = writerManager.GetById(4);
+
+            return View(writer);
         }
     }
 }
