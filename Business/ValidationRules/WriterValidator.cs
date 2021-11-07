@@ -19,8 +19,8 @@ namespace Business.ValidationRules
             RuleFor(x => x.Name).MaximumLength(100).WithMessage("Ad - Soyad maksimum 100 karakter olmalıdır.");
             RuleFor(x => x.Email).EmailAddress().WithMessage("E-posta adresi formatını kontrol ediniz.");
             RuleFor(x => x.Password).Matches(@"[a-z]+").WithMessage("Şifreniz küçük harf içermelidir.");
-            RuleFor(x => x.Password).Matches(@"[0-9]+").WithMessage("Şifreniz büyük harf içermelidir.");
-            RuleFor(x => x.Password).Matches(@"[A-Z]+").WithMessage("Şifreniz rakamkds harf içermelidir.");
+            RuleFor(x => x.Password).Matches(@"[0-9]+").WithMessage("Şifreniz rakam içermelidir.");
+            RuleFor(x => x.Password).Matches(@"[A-Z]+").WithMessage("Şifreniz büyük harf içermelidir.");
             RuleFor(x => x.ConfirmPassword).NotEmpty().WithMessage("Şifre tekrar boş geçilemez.");
             RuleFor(x => x).Custom((x, context) =>
             {

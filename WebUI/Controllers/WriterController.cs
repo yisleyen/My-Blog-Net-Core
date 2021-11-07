@@ -1,5 +1,8 @@
 ﻿using Business.Abstract;
+using Business.ValidationRules;
 using DataAccess.EntityFramework;
+using Entity.Concrete;
+using FluentValidation.Results;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using System;
@@ -35,11 +38,38 @@ namespace WebUI.Controllers
         }
 
         [AllowAnonymous]
+        [HttpGet]
         public IActionResult EditProfile()
         {
             var writer = writerManager.GetById(4);
 
             return View(writer);
+        }
+
+        [AllowAnonymous]
+        [HttpPost]
+        public IActionResult EditProfile(Writer writer)
+        {
+            WriterValidator writerValidator = new WriterValidator();
+            ValidationResult validationResult = writerValidator.Validate(writer);
+
+            if (validationResult.IsValid)
+            {
+                writer.Status = true;
+                writer.CreatedDate = DateTime.Now;
+                writerManager.Update(writer);
+
+                return RedirectToAction("Index", "Dashboard");
+            }
+            else
+            {
+                foreach (var item in validationResult.Errors)
+                {
+                    ModelState.AddModelError(item.PropertyName, item.ErrorMessage);
+                }
+            }
+
+            return View();
         }
     }
 }

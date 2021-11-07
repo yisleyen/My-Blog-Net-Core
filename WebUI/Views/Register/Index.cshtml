@@ -31,13 +31,13 @@
                     <div class="form-row">
                         <div class="col-md-6 mb-3">
                             <label for="exampleInputPassword1 mb-2">Şifre</label>
-                            @Html.TextBoxFor(x => x.Password, new { @class = "form-control" })
+                            @Html.PasswordFor(x => x.Password, new { @class = "form-control" })
                             @Html.ValidationMessageFor(x => x.Password, "", new { @class = "text-danger" })
                             @*<input type="password" class="form-control" id="password1" name="Password" placeholder="" required="">*@
                         </div>
                         <div class="col-md-6 mb-3">
                             <label for="exampleInputPassword1 mb-2">Şifre Tekrar</label>
-                            @Html.TextBoxFor(x => x.ConfirmPassword, new { @class = "form-control" })
+                            @Html.PasswordFor(x => x.ConfirmPassword, new { @class = "form-control" })
                             @Html.ValidationMessageFor(x => x.ConfirmPassword, "", new { @class = "text-danger" })
                             @*<input type="password" class="form-control" id="password1" name="Password" placeholder="" required="">*@
                         </div>

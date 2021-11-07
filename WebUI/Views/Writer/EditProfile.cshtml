@@ -12,8 +12,9 @@
     <div class="col-12 grid-margin stretch-card">
         <div class="card">
             <div class="card-body">
-                @using (Html.BeginForm("Add", "Blog", FormMethod.Post))
+                @using (Html.BeginForm("EditProfile", "Writer", FormMethod.Post))
                 {
+                    @Html.HiddenFor(x => x.Id, new { @class = "form-control" })
                     <div class="form-group">
                         @Html.Label("Adınız")
                         @Html.TextBoxFor(x => x.Name, new { placeholder = "Adınız", @class = "form-control" })
@@ -26,8 +27,13 @@
                     </div>
                     <div class="form-group">
                         @Html.Label("Şifreniz")
-                        @Html.TextBoxFor(x => x.Password, new { placeholder = "Şifreniz", @class = "form-control" })
+                        @Html.PasswordFor(x => x.Password, new { placeholder = "Şifreniz", @class = "form-control" })
                         @Html.ValidationMessageFor(x => x.Password, "", new { @class = "text-danger" })
+                    </div>
+                    <div class="form-group">
+                        @Html.Label("Şifre Tekrar")
+                        @Html.PasswordFor(x => x.ConfirmPassword, new { placeholder = "Şifrenizi Tekrar Giriniz", @class = "form-control" })
+                        @Html.ValidationMessageFor(x => x.ConfirmPassword, "", new { @class = "text-danger" })
                     </div>
                     <div class="form-group">
                         <label>Avatar</label>
