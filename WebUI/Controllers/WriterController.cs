@@ -7,8 +7,10 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
+using WebUI.Models;
 
 namespace WebUI.Controllers
 {
@@ -48,26 +50,45 @@ namespace WebUI.Controllers
 
         [AllowAnonymous]
         [HttpPost]
-        public IActionResult EditProfile(Writer writer)
+        public IActionResult EditProfile(AddProfileImage p)
         {
-            WriterValidator writerValidator = new WriterValidator();
-            ValidationResult validationResult = writerValidator.Validate(writer);
+            Writer writer = new Writer();
 
-            if (validationResult.IsValid)
+            if (p.Image != null)
             {
-                writer.Status = true;
-                writer.CreatedDate = DateTime.Now;
-                writerManager.Update(writer);
+                WriterValidator writerValidator = new WriterValidator();
+                ValidationResult validationResult = writerValidator.Validate(writer);
 
-                return RedirectToAction("Index", "Dashboard");
-            }
-            else
-            {
-                foreach (var item in validationResult.Errors)
+                if (validationResult.IsValid)
                 {
-                    ModelState.AddModelError(item.PropertyName, item.ErrorMessage);
+                    var extension = Path.GetExtension(p.Image.FileName);
+                    var newImageName = Guid.NewGuid() + extension;
+                    var location = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/images/", newImageName);
+                    var stream = new FileStream(location, FileMode.Create);
+                    p.Image.CopyTo(stream);
+
+                    writer.Id = p.Id;
+                    writer.Status = true;
+                    writer.CreatedDate = DateTime.Now;
+                    writer.Email = p.Email;
+                    writer.Name = p.Name;
+                    writer.Password = p.Password;
+                    writer.ConfirmPassword = p.ConfirmPassword;
+                    writer.About = p.About;
+                    writer.Image = newImageName;
+                    writerManager.Update(writer);
+
+                    return RedirectToAction("Index", "Dashboard");
+                }
+                else
+                {
+                    foreach (var item in validationResult.Errors)
+                    {
+                        ModelState.AddModelError(item.PropertyName, item.ErrorMessage);
+                    }
                 }
             }
+            
 
             return View();
         }
