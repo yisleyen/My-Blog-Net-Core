@@ -24,5 +24,6 @@ namespace DataAccess.Concrete
         public DbSet<Newsletter> Newsletters { get; set; }
         public DbSet<Rating> Ratings { get; set; }
         public DbSet<Notification> Notifications { get; set; }
+        public DbSet<Message> Messages { get; set; }
     }
 }
