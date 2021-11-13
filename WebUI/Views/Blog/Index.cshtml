@@ -2,20 +2,20 @@
 @model List<Blog>
 
 @{
-    ViewData["Title"] = "Index";
+    ViewData["Title"] = "Bloglar";
     Layout = "~/Views/Shared/_UserLayout.cshtml";
 }
 
 <section class="main-content-w3layouts-agileits">
     <div class="container">
-        <h3 class="tittle">Blog Posts</h3>
+        <h3 class="tittle">@ViewData["Title"]</h3>
         <div class="inner-sec">
             <div class="left-blog-info-w3layouts-agileits text-left">
                 <div class="row">
                     @foreach (var item in Model)
                     {
                         <div class="col-lg-4 card">
-                            <a href="/Blog/BlogDetails/@item.Id">
+                            <a href="/blog/@Url.FriendlyUrl(item.Title)-@item.Id">
                                 <img src="@item.ThumbnailImage" class="card-img-top img-fluid" alt="">
                             </a>
                             <div class="card-body">
@@ -38,10 +38,10 @@
 
                                 </ul>
                                 <h5 class="card-title">
-                                    <a href="/Blog/BlogDetails/@item.Id">@item.Title</a>
+                                    <a href="/blog/@Url.FriendlyUrl(item.Title)-@item.Id">@item.Title</a>
                                 </h5>
                                 <p class="card-text mb-3">@item.Content.Substring(0, item.Content.Substring(0, 130).LastIndexOf(" "))...</p>
-                                <a href="/Blog/BlogDetails/@item.Id" class="btn btn-primary read-m">Read More</a>
+                                <a href="/blog/@Url.FriendlyUrl(item.Title)-@item.Id" class="btn btn-primary read-m">Devamını Oku</a>
                             </div>
                         </div>
                     }
