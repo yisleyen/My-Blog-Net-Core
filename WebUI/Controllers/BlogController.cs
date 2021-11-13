@@ -26,6 +26,7 @@ namespace WebUI.Controllers
         }
 
         [AllowAnonymous]
+        [Route("blog/{titl}-{id}")]
         public IActionResult BlogDetails(int id)
         {
             ViewBag.BlogId = id;
