@@ -15,6 +15,21 @@ namespace DataAccess.Concrete
             optionsBuilder.UseSqlServer("server=LAPTOP-KJ1H2B7Q\\SQLEXPRESS;database=MyBlogDb;integrated security=true;");
         }
 
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            modelBuilder.Entity<Message2>()
+            .HasOne(x => x.SenderUser)
+            .WithMany(y => y.Sender)
+            .HasForeignKey(z => z.SenderID)
+            .OnDelete(DeleteBehavior.ClientSetNull);
+
+            modelBuilder.Entity<Message2>()
+            .HasOne(x => x.ReceiverUser)
+            .WithMany(y => y.Receiver)
+            .HasForeignKey(z => z.ReceiverID)
+            .OnDelete(DeleteBehavior.ClientSetNull);
+        }
+
         public DbSet<About> Abouts { get; set; }
         public DbSet<Blog> Blogs { get; set; }
         public DbSet<Category> Categories { get; set; }
@@ -25,5 +40,6 @@ namespace DataAccess.Concrete
         public DbSet<Rating> Ratings { get; set; }
         public DbSet<Notification> Notifications { get; set; }
         public DbSet<Message> Messages { get; set; }
+        public DbSet<Message2> Message2s { get; set; }
     }
 }
