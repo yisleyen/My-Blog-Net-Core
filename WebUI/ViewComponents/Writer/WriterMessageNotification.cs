@@ -11,11 +11,11 @@ namespace WebUI.ViewComponents.Writer
 
     public class WriterMessageNotification : ViewComponent
     {
-        MessageManager messageManager = new MessageManager(new EfMessageRepository());
+        Message2Manager messageManager = new Message2Manager(new EfMessage2Repository());
 
         public IViewComponentResult Invoke()
         {
-            var messages = messageManager.GetInboxListByWriter("me@yusufisleyen.com");
+            var messages = messageManager.GetInboxListByWriter(4);
 
             ViewBag.TotalMessageCount = messages.Count;
 
