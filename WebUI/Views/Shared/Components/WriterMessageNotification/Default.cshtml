@@ -11,7 +11,7 @@
                 <img src="~/_writer/assets/images/faces/face4.jpg" alt="image" class="profile-pic">
             </div>
             <div class="preview-item-content d-flex align-items-start flex-column justify-content-center">
-                <h6 class="preview-subject ellipsis mb-1 font-weight-normal">@item.SenderID sana mesaj gönderdi</h6>
+                <h6 class="preview-subject ellipsis mb-1 font-weight-normal">@item.SenderUser.Name sana mesaj gönderdi</h6>
                 @{
                     DateTime end = (DateTime)item.CreatedDate;
                     DateTime now = DateTime.Now;

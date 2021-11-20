@@ -9,5 +9,6 @@ namespace DataAccess.Abstract
 {
     public interface IMessage2Dal : IGenericDal<Message2>
     {
+        List<Message2> GetAllWithWriterByMessage(int id);
     }
 }

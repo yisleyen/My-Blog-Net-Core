@@ -35,7 +35,7 @@ namespace Business.Concrete
 
         public List<Message2> GetInboxListByWriter(int id)
         {
-            return _messageDal.GetAll(x => x.ReceiverID == id);
+            return _messageDal.GetAllWithWriterByMessage(id);
         }
 
         public void Insert(Message2 entity)
