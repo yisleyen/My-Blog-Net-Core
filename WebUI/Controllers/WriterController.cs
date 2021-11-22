@@ -1,5 +1,6 @@
 ﻿using Business.Abstract;
 using Business.ValidationRules;
+using DataAccess.Concrete;
 using DataAccess.EntityFramework;
 using Entity.Concrete;
 using FluentValidation.Results;
@@ -18,8 +19,17 @@ namespace WebUI.Controllers
     {
         WriterManager writerManager = new WriterManager(new EfWriterRepository());
 
+        [Authorize]
         public IActionResult Index()
         {
+            var userMail = User.Identity.Name;
+
+            Context c = new Context();
+
+            var userName = c.Writers.Where(x => x.Email == userMail).Select(y => y.Name).FirstOrDefault();
+
+            ViewBag.Name = userName;
+
             return View();
         }
 

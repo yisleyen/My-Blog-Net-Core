@@ -31,7 +31,7 @@ namespace WebUI.Controllers
             {
                 var claims = new List<Claim>
                 {
-                    new Claim(ClaimTypes.Email, writer.Email)
+                    new Claim(ClaimTypes.Name, writer.Email)
                 };
 
                 var userIdentity = new ClaimsIdentity(claims, "a");
