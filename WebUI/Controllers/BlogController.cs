@@ -1,4 +1,5 @@
-﻿using Business.Concrete;
+﻿using Business.Abstract;
+using Business.Concrete;
 using Business.ValidationRules;
 using DataAccess.EntityFramework;
 using Entity.Concrete;
@@ -16,6 +17,7 @@ namespace WebUI.Controllers
     public class BlogController : Controller
     {
         BlogManager blogManager = new BlogManager(new EfBlogRepository());
+        WriterManager writerManager = new WriterManager(new EfWriterRepository());
 
         [AllowAnonymous]
         public IActionResult Index()
@@ -38,15 +40,16 @@ namespace WebUI.Controllers
             return View(blog);
         }
 
-        [AllowAnonymous]
         public IActionResult WriterBlogList()
         {
-            var blogList = blogManager.GetAllWithCategoryByWriter(4);
+            var userMail = User.Identity.Name;
+            var user = writerManager.GetWriterByFilter(userMail);
+
+            var blogList = blogManager.GetAllWithCategoryByWriter(user[0].Id);
 
             return View(blogList);
         }
 
-        [AllowAnonymous]
         [HttpGet]
         public IActionResult Add()
         {
@@ -62,16 +65,18 @@ namespace WebUI.Controllers
             return View();
         }
 
-        [AllowAnonymous]
         [HttpPost]
         public IActionResult Add(Blog blog)
         {
+            var userMail = User.Identity.Name;
+            var user = writerManager.GetWriterByFilter(userMail);
+
             BlogValidator blogValidator = new BlogValidator();
             ValidationResult validationResult = blogValidator.Validate(blog);
 
             if (validationResult.IsValid)
             {
-                blog.WriterId = 4;
+                blog.WriterId = user[0].Id;
                 blog.Status = true;
                 blog.CreatedDate = DateTime.Now;
                 blogManager.Insert(blog);
@@ -89,7 +94,6 @@ namespace WebUI.Controllers
             return View();
         }
 
-        [AllowAnonymous]
         public IActionResult Delete(int id)
         {
             var blog = blogManager.GetById(id);
@@ -99,7 +103,6 @@ namespace WebUI.Controllers
             return RedirectToAction("WriterBlogList", "Blog");
         }
 
-        [AllowAnonymous]
         [HttpGet]
         public IActionResult Edit(int id)
         {
@@ -117,7 +120,6 @@ namespace WebUI.Controllers
             return View(blog);
         }
 
-        [AllowAnonymous]
         [HttpPost]
         public IActionResult Edit(Blog blog)
         {

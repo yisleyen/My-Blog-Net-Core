@@ -14,7 +14,10 @@ namespace WebUI.ViewComponents.Writer
 
         public IViewComponentResult Invoke()
         {
-            var writer = writerManager.GetById(4);
+            var userMail = User.Identity.Name;
+            var user = writerManager.GetWriterByFilter(userMail);
+
+            var writer = writerManager.GetById(user[0].Id);
 
             return View(writer);
         }

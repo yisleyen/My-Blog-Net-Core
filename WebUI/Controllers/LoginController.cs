@@ -40,7 +40,7 @@ namespace WebUI.Controllers
 
                 await HttpContext.SignInAsync(claimsPrincipal);
 
-                return RedirectToAction("Index", "Writer");
+                return RedirectToAction("Index", "Dashboard");
             }
             else // login işlemi başarısız
             {

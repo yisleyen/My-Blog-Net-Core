@@ -1,4 +1,5 @@
-﻿using Business.Concrete;
+﻿using Business.Abstract;
+using Business.Concrete;
 using DataAccess.EntityFramework;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
@@ -13,10 +14,14 @@ namespace WebUI.Controllers
     public class MessageController : Controller
     {
         Message2Manager messageManager = new Message2Manager(new EfMessage2Repository());
+        WriterManager writerManager = new WriterManager(new EfWriterRepository());
 
         public IActionResult List()
         {
-            var messages = messageManager.GetInboxListByWriter(4);
+            var userMail = User.Identity.Name;
+            var user = writerManager.GetWriterByFilter(userMail);
+
+            var messages = messageManager.GetInboxListByWriter(user[0].Id);
 
             return View(messages);
         }

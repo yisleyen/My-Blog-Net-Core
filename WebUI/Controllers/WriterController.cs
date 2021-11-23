@@ -19,21 +19,15 @@ namespace WebUI.Controllers
     {
         WriterManager writerManager = new WriterManager(new EfWriterRepository());
 
-        [Authorize]
         public IActionResult Index()
         {
             var userMail = User.Identity.Name;
-
-            Context c = new Context();
-
-            var userName = c.Writers.Where(x => x.Email == userMail).Select(y => y.Name).FirstOrDefault();
-
-            ViewBag.Name = userName;
+            var user = writerManager.GetWriterByFilter(userMail);
+            ViewBag.Name = user[0].Name;
 
             return View();
         }
 
-        [AllowAnonymous]
         public IActionResult Test()
         {
             return View();
@@ -49,16 +43,16 @@ namespace WebUI.Controllers
             return PartialView();
         }
 
-        [AllowAnonymous]
         [HttpGet]
         public IActionResult EditProfile()
         {
-            var writer = writerManager.GetById(4);
+            var userMail = User.Identity.Name;
+            var user = writerManager.GetWriterByFilter(userMail);
+            var writer = writerManager.GetById(user[0].Id);
 
             return View(writer);
         }
 
-        [AllowAnonymous]
         [HttpPost]
         public IActionResult EditProfile(AddProfileImage p)
         {

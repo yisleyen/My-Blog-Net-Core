@@ -33,6 +33,11 @@ namespace Business.Abstract
             return _writerDal.GetById(id);
         }
 
+        public List<Writer> GetWriterByFilter(string email)
+        {
+            return _writerDal.GetAll(x => x.Email == email);
+        }
+
         public void Insert(Writer writer)
         {
             _writerDal.Insert(writer);

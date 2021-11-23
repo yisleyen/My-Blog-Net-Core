@@ -1,4 +1,5 @@
-﻿using Business.Concrete;
+﻿using Business.Abstract;
+using Business.Concrete;
 using DataAccess.EntityFramework;
 using Microsoft.AspNetCore.Mvc;
 using System;
@@ -12,10 +13,14 @@ namespace WebUI.ViewComponents.Writer
     public class WriterMessageNotification : ViewComponent
     {
         Message2Manager messageManager = new Message2Manager(new EfMessage2Repository());
+        WriterManager writerManager = new WriterManager(new EfWriterRepository());
 
         public IViewComponentResult Invoke()
         {
-            var messages = messageManager.GetInboxListByWriter(4);
+            var userMail = User.Identity.Name;
+            var user = writerManager.GetWriterByFilter(userMail);
+
+            var messages = messageManager.GetInboxListByWriter(user[0].Id);
 
             ViewBag.TotalMessageCount = messages.Count;
 
