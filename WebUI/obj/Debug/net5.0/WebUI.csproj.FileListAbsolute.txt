@@ -561,3 +561,5 @@ C:\Yusuf\project\My-Blog-Net-Core\WebUI\obj\Debug\net5.0\Razor\Views\Writer\Edit
 C:\Yusuf\project\My-Blog-Net-Core\WebUI\obj\Debug\net5.0\Razor\Views\Notification\List.cshtml.g.cs
 C:\Yusuf\project\My-Blog-Net-Core\WebUI\obj\Debug\net5.0\Razor\Views\Message\List.cshtml.g.cs
 C:\Yusuf\project\My-Blog-Net-Core\WebUI\obj\Debug\net5.0\Razor\Views\Message\MessageDetails.cshtml.g.cs
+C:\Yusuf\project\My-Blog-Net-Core\WebUI\obj\Debug\net5.0\Razor\Views\Shared\_AdminLayout.cshtml.g.cs
+C:\Yusuf\project\My-Blog-Net-Core\WebUI\obj\Debug\net5.0\Razor\Views\Admin\Index.cshtml.g.cs
