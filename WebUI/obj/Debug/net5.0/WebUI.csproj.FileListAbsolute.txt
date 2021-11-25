@@ -563,3 +563,17 @@ C:\Yusuf\project\My-Blog-Net-Core\WebUI\obj\Debug\net5.0\Razor\Views\Message\Lis
 C:\Yusuf\project\My-Blog-Net-Core\WebUI\obj\Debug\net5.0\Razor\Views\Message\MessageDetails.cshtml.g.cs
 C:\Yusuf\project\My-Blog-Net-Core\WebUI\obj\Debug\net5.0\Razor\Views\Shared\_AdminLayout.cshtml.g.cs
 C:\Yusuf\project\My-Blog-Net-Core\WebUI\obj\Debug\net5.0\Razor\Views\Admin\Index.cshtml.g.cs
+C:\Yusuf\me\My-Blog-Net-Core\WebUI\obj\Debug\net5.0\Razor\Views\Admin\Index.cshtml.g.cs
+C:\Yusuf\me\My-Blog-Net-Core\WebUI\obj\Debug\net5.0\Razor\Views\Blog\Add.cshtml.g.cs
+C:\Yusuf\me\My-Blog-Net-Core\WebUI\obj\Debug\net5.0\Razor\Views\Blog\Edit.cshtml.g.cs
+C:\Yusuf\me\My-Blog-Net-Core\WebUI\obj\Debug\net5.0\Razor\Views\Blog\WriterBlogList.cshtml.g.cs
+C:\Yusuf\me\My-Blog-Net-Core\WebUI\obj\Debug\net5.0\Razor\Views\Dashboard\Index.cshtml.g.cs
+C:\Yusuf\me\My-Blog-Net-Core\WebUI\obj\Debug\net5.0\Razor\Views\Message\List.cshtml.g.cs
+C:\Yusuf\me\My-Blog-Net-Core\WebUI\obj\Debug\net5.0\Razor\Views\Message\MessageDetails.cshtml.g.cs
+C:\Yusuf\me\My-Blog-Net-Core\WebUI\obj\Debug\net5.0\Razor\Views\Notification\List.cshtml.g.cs
+C:\Yusuf\me\My-Blog-Net-Core\WebUI\obj\Debug\net5.0\Razor\Views\Shared\Components\WriterDashboardBlogList\Default.cshtml.g.cs
+C:\Yusuf\me\My-Blog-Net-Core\WebUI\obj\Debug\net5.0\Razor\Views\Shared\Components\WriterDashboardCategoryList\Default.cshtml.g.cs
+C:\Yusuf\me\My-Blog-Net-Core\WebUI\obj\Debug\net5.0\Razor\Views\Shared\Components\WriterInfoOnDashboard\Default.cshtml.g.cs
+C:\Yusuf\me\My-Blog-Net-Core\WebUI\obj\Debug\net5.0\Razor\Views\Shared\_AdminLayout.cshtml.g.cs
+C:\Yusuf\me\My-Blog-Net-Core\WebUI\obj\Debug\net5.0\Razor\Views\Writer\EditProfile.cshtml.g.cs
+C:\Yusuf\me\My-Blog-Net-Core\WebUI\obj\Debug\net5.0\Razor\Views\Admin\NavBarPartial.cshtml.g.cs
