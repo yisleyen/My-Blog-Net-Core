@@ -577,3 +577,4 @@ C:\Yusuf\me\My-Blog-Net-Core\WebUI\obj\Debug\net5.0\Razor\Views\Shared\Component
 C:\Yusuf\me\My-Blog-Net-Core\WebUI\obj\Debug\net5.0\Razor\Views\Shared\_AdminLayout.cshtml.g.cs
 C:\Yusuf\me\My-Blog-Net-Core\WebUI\obj\Debug\net5.0\Razor\Views\Writer\EditProfile.cshtml.g.cs
 C:\Yusuf\me\My-Blog-Net-Core\WebUI\obj\Debug\net5.0\Razor\Views\Admin\NavBarPartial.cshtml.g.cs
+C:\Yusuf\me\My-Blog-Net-Core\WebUI\obj\Debug\net5.0\Razor\Areas\Admin\Views\Category\Index.cshtml.g.cs
