@@ -1,20 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Yusuf\\me\\My-Blog-Net-Core\\DataAccess\\DataAccess.csproj": {}
+    "C:\\Yusuf\\project\\My-Blog-Net-Core\\DataAccess\\DataAccess.csproj": {}
   },
   "projects": {
-    "C:\\Yusuf\\me\\My-Blog-Net-Core\\DataAccess\\DataAccess.csproj": {
+    "C:\\Yusuf\\project\\My-Blog-Net-Core\\DataAccess\\DataAccess.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Yusuf\\me\\My-Blog-Net-Core\\DataAccess\\DataAccess.csproj",
+        "projectUniqueName": "C:\\Yusuf\\project\\My-Blog-Net-Core\\DataAccess\\DataAccess.csproj",
         "projectName": "DataAccess",
-        "projectPath": "C:\\Yusuf\\me\\My-Blog-Net-Core\\DataAccess\\DataAccess.csproj",
-        "packagesPath": "C:\\Users\\Yusuf\\.nuget\\packages\\",
-        "outputPath": "C:\\Yusuf\\me\\My-Blog-Net-Core\\DataAccess\\obj\\",
+        "projectPath": "C:\\Yusuf\\project\\My-Blog-Net-Core\\DataAccess\\DataAccess.csproj",
+        "packagesPath": "C:\\Users\\yusuf\\.nuget\\packages\\",
+        "outputPath": "C:\\Yusuf\\project\\My-Blog-Net-Core\\DataAccess\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Yusuf\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\yusuf\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -28,8 +31,8 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\Yusuf\\me\\My-Blog-Net-Core\\Entities\\Entity.csproj": {
-                "projectPath": "C:\\Yusuf\\me\\My-Blog-Net-Core\\Entities\\Entity.csproj"
+              "C:\\Yusuf\\project\\My-Blog-Net-Core\\Entities\\Entity.csproj": {
+                "projectPath": "C:\\Yusuf\\project\\My-Blog-Net-Core\\Entities\\Entity.csproj"
               }
             }
           }
@@ -80,21 +83,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.403\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.303\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Yusuf\\me\\My-Blog-Net-Core\\Entities\\Entity.csproj": {
+    "C:\\Yusuf\\project\\My-Blog-Net-Core\\Entities\\Entity.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Yusuf\\me\\My-Blog-Net-Core\\Entities\\Entity.csproj",
+        "projectUniqueName": "C:\\Yusuf\\project\\My-Blog-Net-Core\\Entities\\Entity.csproj",
         "projectName": "Entity",
-        "projectPath": "C:\\Yusuf\\me\\My-Blog-Net-Core\\Entities\\Entity.csproj",
-        "packagesPath": "C:\\Users\\Yusuf\\.nuget\\packages\\",
-        "outputPath": "C:\\Yusuf\\me\\My-Blog-Net-Core\\Entities\\obj\\",
+        "projectPath": "C:\\Yusuf\\project\\My-Blog-Net-Core\\Entities\\Entity.csproj",
+        "packagesPath": "C:\\Users\\yusuf\\.nuget\\packages\\",
+        "outputPath": "C:\\Yusuf\\project\\My-Blog-Net-Core\\Entities\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Yusuf\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\yusuf\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -134,7 +140,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.403\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.303\\RuntimeIdentifierGraph.json"
         }
       }
     }

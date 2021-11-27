@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "G6pWzTMIfMSuxkjE0miUXt5smWkECiOIDe1BHUv0gAnXc1PzlFFONfTNE9fqRKpVCOuds5Vrfs2AejurtORN7A==",
+  "dgSpecHash": "dHFMB5T0s/3Ug3fmgKUDOyuV0Y7s3rlV7FgbCqcxL9wywAQclCkPRhMjmsuSQEgLp8aNhubD6VBDrBiUzKFSBw==",
   "success": true,
-  "projectFilePath": "C:\\Yusuf\\me\\My-Blog-Net-Core\\Core\\Core.csproj",
+  "projectFilePath": "C:\\Yusuf\\project\\My-Blog-Net-Core\\Core\\Core.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
