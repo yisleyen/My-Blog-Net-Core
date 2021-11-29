@@ -1,4 +1,6 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Business.Concrete;
+using DataAccess.EntityFramework;
+using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -8,10 +10,14 @@ namespace WebUI.Areas.Admin.Controllers
 {
     public class CategoryController : Controller
     {
+        CategoryManager categoryManager = new CategoryManager(new EfCategoryRepository());
+
         [Area("Admin")]
         public IActionResult Index()
         {
-            return View();
+            var categoryList = categoryManager.GetAll();
+
+            return View(categoryList);
         }
     }
 }
