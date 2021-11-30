@@ -580,3 +580,7 @@ C:\Yusuf\me\My-Blog-Net-Core\WebUI\obj\Debug\net5.0\Razor\Views\Admin\NavBarPart
 C:\Yusuf\me\My-Blog-Net-Core\WebUI\obj\Debug\net5.0\Razor\Areas\Admin\Views\Category\Index.cshtml.g.cs
 C:\Yusuf\project\My-Blog-Net-Core\WebUI\obj\Debug\net5.0\Razor\Areas\Admin\Views\Category\Index.cshtml.g.cs
 C:\Yusuf\project\My-Blog-Net-Core\WebUI\obj\Debug\net5.0\Razor\Views\Admin\NavBarPartial.cshtml.g.cs
+C:\Yusuf\project\My-Blog-Net-Core\WebUI\bin\Debug\net5.0\JetBrains.Annotations.dll
+C:\Yusuf\project\My-Blog-Net-Core\WebUI\bin\Debug\net5.0\X.PagedList.dll
+C:\Yusuf\project\My-Blog-Net-Core\WebUI\bin\Debug\net5.0\X.PagedList.Mvc.Core.dll
+C:\Yusuf\project\My-Blog-Net-Core\WebUI\obj\Debug\net5.0\Razor\Areas\Admin\Views\Category\Add.cshtml.g.cs

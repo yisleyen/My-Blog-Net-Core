@@ -1,0 +1,40 @@
+﻿@model Entity.Concrete.Category
+@{
+    ViewData["Title"] = "Yeni Kategori Ekle";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<div class="row">
+    <div class="col-lg-12">
+        <div class="ibox ">
+            <div class="ibox-title">
+                <h5>@ViewData["Title"]</h5>
+            </div>
+            <div class="ibox-content">
+                @using (Html.BeginForm("Add", "Category", FormMethod.Post))
+                {
+                    <div class="form-group  row">
+                        <label class="col-sm-2 col-form-label">@Html.Label("Adı")</label>
+                        <div class="col-sm-10">
+                            @Html.TextBoxFor(x => x.Name, new { placeholder = "Adı", @class = "form-control" })
+                            @Html.ValidationMessageFor(x => x.Name, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+                    <div class="form-group  row">
+                        <label class="col-sm-2 col-form-label">@Html.Label("Açıklama")</label>
+                        <div class="col-sm-10">
+                            @Html.TextAreaFor(x => x.Description, 15, 5, new { placeholder = "Açıklama", @class = "form-control" })
+                            @Html.ValidationMessageFor(x => x.Description, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+                    <div class="hr-line-dashed"></div>
+                    <div class="form-group row">
+                        <div class="col-sm-4 col-sm-offset-2">
+                            <button class="btn btn-primary btn-sm" type="submit">Kaydet</button>
+                        </div>
+                    </div>
+                }
+            </div>
+        </div>
+    </div>
+</div>
