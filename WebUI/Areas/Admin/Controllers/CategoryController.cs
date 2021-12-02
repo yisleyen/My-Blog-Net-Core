@@ -67,5 +67,11 @@ namespace WebUI.Areas.Admin.Controllers
 
             return RedirectToAction("Index", "Category");
         }
+
+        [HttpGet]
+        public IActionResult Edit()
+        {
+            return View();
+        }
     }
 }
