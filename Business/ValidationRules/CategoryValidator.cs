@@ -17,6 +17,8 @@ namespace Business.ValidationRules
 
             RuleFor(x => x.Name).MinimumLength(2).WithMessage("Başlık minimum 2 karakter olmalıdır.");
             RuleFor(x => x.Name).MaximumLength(50).WithMessage("Başlık maksimum 50 karakter olmalıdır.");
+
+            RuleFor(x => x.Description).MinimumLength(100).WithMessage("İçerik minimum 100 karakter olmalıdır.");
         }
     }
 }
