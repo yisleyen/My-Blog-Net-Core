@@ -585,3 +585,7 @@ C:\Yusuf\project\My-Blog-Net-Core\WebUI\bin\Debug\net5.0\X.PagedList.dll
 C:\Yusuf\project\My-Blog-Net-Core\WebUI\bin\Debug\net5.0\X.PagedList.Mvc.Core.dll
 C:\Yusuf\project\My-Blog-Net-Core\WebUI\obj\Debug\net5.0\Razor\Areas\Admin\Views\Category\Add.cshtml.g.cs
 C:\Yusuf\project\My-Blog-Net-Core\WebUI\obj\Debug\net5.0\Razor\Areas\Admin\Views\Blog\Index.cshtml.g.cs
+C:\Yusuf\project\My-Blog-Net-Core\WebUI\bin\Debug\net5.0\ClosedXML.dll
+C:\Yusuf\project\My-Blog-Net-Core\WebUI\bin\Debug\net5.0\DocumentFormat.OpenXml.dll
+C:\Yusuf\project\My-Blog-Net-Core\WebUI\bin\Debug\net5.0\ExcelNumberFormat.dll
+C:\Yusuf\project\My-Blog-Net-Core\WebUI\bin\Debug\net5.0\System.IO.Packaging.dll
