@@ -13,7 +13,6 @@ using X.PagedList;
 
 namespace WebUI.Areas.Admin.Controllers
 {
-    [AllowAnonymous]
     [Area("Admin")]
     public class CategoryController : Controller
     {

@@ -584,4 +584,4 @@ C:\Yusuf\project\My-Blog-Net-Core\WebUI\bin\Debug\net5.0\JetBrains.Annotations.d
 C:\Yusuf\project\My-Blog-Net-Core\WebUI\bin\Debug\net5.0\X.PagedList.dll
 C:\Yusuf\project\My-Blog-Net-Core\WebUI\bin\Debug\net5.0\X.PagedList.Mvc.Core.dll
 C:\Yusuf\project\My-Blog-Net-Core\WebUI\obj\Debug\net5.0\Razor\Areas\Admin\Views\Category\Add.cshtml.g.cs
-C:\Yusuf\project\My-Blog-Net-Core\WebUI\obj\Debug\net5.0\Razor\Areas\Admin\Views\Category\Edit.cshtml.g.cs
+C:\Yusuf\project\My-Blog-Net-Core\WebUI\obj\Debug\net5.0\Razor\Areas\Admin\Views\Blog\Index.cshtml.g.cs
