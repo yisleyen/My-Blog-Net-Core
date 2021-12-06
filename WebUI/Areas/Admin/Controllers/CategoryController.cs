@@ -19,7 +19,6 @@ namespace WebUI.Areas.Admin.Controllers
     {
         CategoryManager categoryManager = new CategoryManager(new EfCategoryRepository());
 
-
         public IActionResult Index(int page = 1)
         {
             var categoryList = categoryManager.GetAll().ToPagedList(page, 12);
@@ -66,12 +65,6 @@ namespace WebUI.Areas.Admin.Controllers
             categoryManager.Delete(category);
 
             return RedirectToAction("Index", "Category");
-        }
-
-        [HttpGet]
-        public IActionResult Edit()
-        {
-            return View();
         }
     }
 }
