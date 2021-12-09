@@ -1,7 +1,46 @@
-﻿@{
+﻿@model Entity.Concrete.Blog
+@{
     ViewData["Title"] = "Yeni Blog Ekle";
     Layout = "~/Views/Shared/_AdminLayout.cshtml";
 }
 
-<h1>@ViewData["Title"]</h1>
-
+<div class="row">
+    <div class="col-lg-12">
+        <div class="ibox ">
+            <div class="ibox-title">
+                <h5>@ViewData["Title"]</h5>
+            </div>
+            <div class="ibox-content">
+                @using (Html.BeginForm("Add", "Blog", FormMethod.Post))
+                {
+                    <div class="form-group">
+                        @Html.Label("Başlık")
+                        @Html.TextBoxFor(x => x.Title, new { placeholder = "Başlık", @class = "form-control" })
+                        @Html.ValidationMessageFor(x => x.Title, "", new { @class = "text-danger" })
+                    </div>
+                    <div class="form-group">
+                        @Html.Label("İçerik")
+                        @Html.TextAreaFor(x => x.Content, 15, 5, new { placeholder = "İçerik", @class = "form-control" })
+                        @Html.ValidationMessageFor(x => x.Content, "", new { @class = "text-danger" })
+                    </div>
+                    <div class="form-group">
+                        @Html.Label("Küçük Görsel")
+                        @Html.TextBoxFor(x => x.ThumbnailImage, new { placeholder = "Küçük Görsel", @class = "form-control" })
+                        @Html.ValidationMessageFor(x => x.ThumbnailImage, "", new { @class = "text-danger" })
+                    </div>
+                    <div class="form-group">
+                        @Html.Label("Görsel")
+                        @Html.TextBoxFor(x => x.Image, new { placeholder = "Görsel", @class = "form-control" })
+                        @Html.ValidationMessageFor(x => x.Image, "", new { @class = "text-danger" })
+                    </div>
+                    <div class="form-group">
+                        @Html.Label("Kategori")
+                        @Html.DropDownListFor(x => x.CategoryId, (List<SelectListItem>)ViewBag.CategorySelectList, new { @class = "form-control" })
+                        @Html.ValidationMessageFor(x => x.CategoryId, "", new { @class = "text-danger" })
+                    </div>
+                    <button type="submit" class="btn btn-gradient-primary mr-2">Ekle</button>
+                }
+            </div>
+        </div>
+    </div>
+</div>

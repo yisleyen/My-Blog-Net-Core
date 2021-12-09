@@ -1,8 +1,12 @@
-﻿using Business.Concrete;
+﻿using Business.Abstract;
+using Business.Concrete;
+using Business.ValidationRules;
 using ClosedXML.Excel;
 using DataAccess.EntityFramework;
 using Entity.Concrete;
+using FluentValidation.Results;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Rendering;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -16,6 +20,7 @@ namespace WebUI.Areas.Admin.Controllers
     public class BlogController : Controller
     {
         BlogManager blogManager = new BlogManager(new EfBlogRepository());
+        WriterManager writerManager = new WriterManager(new EfWriterRepository());
 
         public IActionResult Index(int page = 1)
         {
@@ -27,13 +32,54 @@ namespace WebUI.Areas.Admin.Controllers
         [HttpGet]
         public IActionResult Add()
         {
+            CategoryManager categoryManager = new CategoryManager(new EfCategoryRepository());
+            List<SelectListItem> categoryList = (from x in categoryManager.GetAll()
+                                                 select new SelectListItem
+                                                 {
+                                                     Text = x.Name,
+                                                     Value = x.Id.ToString()
+                                                 }).ToList();
+            ViewBag.CategorySelectList = categoryList;
+
             return View();
         }
 
         [HttpPost]
         public IActionResult Add(Blog blog)
         {
+            var userMail = User.Identity.Name;
+            var user = writerManager.GetWriterByFilter(userMail);
+
+            BlogValidator blogValidator = new BlogValidator();
+            ValidationResult validationResult = blogValidator.Validate(blog);
+
+            if (validationResult.IsValid)
+            {
+                blog.WriterId = user[0].Id;
+                blog.Status = true;
+                blog.CreatedDate = DateTime.Now;
+                blogManager.Insert(blog);
+
+                return RedirectToAction("Index", "Blog");
+            }
+            else
+            {
+                foreach (var item in validationResult.Errors)
+                {
+                    ModelState.AddModelError(item.PropertyName, item.ErrorMessage);
+                }
+            }
+
             return View();
+        }
+
+        public IActionResult Delete(int id)
+        {
+            var blog = blogManager.GetById(id);
+
+            blogManager.Delete(blog);
+
+            return RedirectToAction("Index", "Blog");
         }
 
         public IActionResult ExportExcelFile()
