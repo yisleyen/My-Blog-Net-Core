@@ -590,3 +590,4 @@ C:\Yusuf\project\My-Blog-Net-Core\WebUI\bin\Debug\net5.0\DocumentFormat.OpenXml.
 C:\Yusuf\project\My-Blog-Net-Core\WebUI\bin\Debug\net5.0\ExcelNumberFormat.dll
 C:\Yusuf\project\My-Blog-Net-Core\WebUI\bin\Debug\net5.0\System.IO.Packaging.dll
 C:\Yusuf\project\My-Blog-Net-Core\WebUI\obj\Debug\net5.0\Razor\Areas\Admin\Views\Metric\Index.cshtml.g.cs
+C:\Yusuf\project\My-Blog-Net-Core\WebUI\obj\Debug\net5.0\Razor\Areas\Admin\Views\Blog\Add.cshtml.g.cs

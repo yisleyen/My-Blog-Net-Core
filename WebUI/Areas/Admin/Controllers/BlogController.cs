@@ -1,6 +1,7 @@
 ﻿using Business.Concrete;
 using ClosedXML.Excel;
 using DataAccess.EntityFramework;
+using Entity.Concrete;
 using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
@@ -21,6 +22,18 @@ namespace WebUI.Areas.Admin.Controllers
             var blogs = blogManager.GetAll().ToPagedList(page, 12);
 
             return View(blogs);
+        }
+
+        [HttpGet]
+        public IActionResult Add()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public IActionResult Add(Blog blog)
+        {
+            return View();
         }
 
         public IActionResult ExportExcelFile()
