@@ -14,8 +14,9 @@ namespace WebUI.Areas.Admin.ViewComponents.Statistic
 
         public IViewComponentResult Invoke()
         {
-            string apiKey = "0b03a2b2220bbc502e877d0bcec5aa09";
-            string connectionLink = "http://api.openweathermap.org/data/2.5/weather?q=Istanbul&mode=xml&lang=tr&units=metric&appid=" + apiKey;
+            string apiKey = context.Admins.Where(x => x.Id == 1).Select(y => y.WeatherApiKey).FirstOrDefault();
+            string city = context.Admins.Where(x => x.Id == 1).Select(y => y.City).FirstOrDefault();
+            string connectionLink = "http://api.openweathermap.org/data/2.5/weather?q=" + city + "&mode=xml&lang=tr&units=metric&appid=" + apiKey;
             XDocument Hava = XDocument.Load(connectionLink);
 
             var heat = Hava.Descendants("temperature").ElementAt(0).Attribute("value").Value;

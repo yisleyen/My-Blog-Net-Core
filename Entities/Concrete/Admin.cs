@@ -17,5 +17,7 @@ namespace Entity.Concrete
         public string ShortDescription { get; set; }
         public string ImageUrl { get; set; }
         public string Role { get; set; }
+        public string WeatherApiKey { get; set; }
+        public string City { get; set; }
     }
 }
