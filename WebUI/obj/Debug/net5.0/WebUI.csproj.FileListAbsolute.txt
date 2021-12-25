@@ -593,3 +593,4 @@ C:\Yusuf\project\My-Blog-Net-Core\WebUI\obj\Debug\net5.0\Razor\Areas\Admin\Views
 C:\Yusuf\project\My-Blog-Net-Core\WebUI\obj\Debug\net5.0\Razor\Areas\Admin\Views\Blog\Add.cshtml.g.cs
 C:\Yusuf\project\My-Blog-Net-Core\WebUI\obj\Debug\net5.0\Razor\Areas\Admin\Views\Shared\Components\Statistic\Default.cshtml.g.cs
 C:\Yusuf\project\My-Blog-Net-Core\WebUI\obj\Debug\net5.0\Razor\Areas\Admin\Views\Shared\Components\StatisticAdmin\Default.cshtml.g.cs
+C:\Yusuf\project\My-Blog-Net-Core\WebUI\obj\Debug\net5.0\Razor\Areas\Admin\Views\Chart\Index.cshtml.g.cs
