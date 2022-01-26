@@ -64,5 +64,21 @@ namespace API.Controllers
                 return Ok(category);
             }
         }
+
+        [HttpPut]
+        public IActionResult CategoryUpdate(Category category)
+        {
+            if (category == null)
+            {
+                return NotFound();
+            }
+            else
+            {
+                category.Status = true;
+                categoryManager.Update(category);
+
+                return Ok();
+            }
+        }
     }
 }
