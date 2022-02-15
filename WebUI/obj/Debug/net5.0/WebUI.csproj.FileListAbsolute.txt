@@ -504,7 +504,6 @@ C:\Yusuf\project\My-Blog-Net-Core\WebUI\obj\Debug\net5.0\WebUI.MvcApplicationPar
 C:\Yusuf\project\My-Blog-Net-Core\WebUI\obj\Debug\net5.0\WebUI.RazorAssemblyInfo.cache
 C:\Yusuf\project\My-Blog-Net-Core\WebUI\obj\Debug\net5.0\WebUI.RazorAssemblyInfo.cs
 C:\Yusuf\project\My-Blog-Net-Core\WebUI\obj\Debug\net5.0\staticwebassets\WebUI.StaticWebAssets.Manifest.cache
-C:\Yusuf\project\My-Blog-Net-Core\WebUI\obj\Debug\net5.0\staticwebassets\WebUI.StaticWebAssets.xml
 C:\Yusuf\project\My-Blog-Net-Core\WebUI\obj\Debug\net5.0\scopedcss\bundle\WebUI.styles.css
 C:\Yusuf\project\My-Blog-Net-Core\WebUI\obj\Debug\net5.0\WebUI.TagHelpers.input.cache
 C:\Yusuf\project\My-Blog-Net-Core\WebUI\obj\Debug\net5.0\WebUI.TagHelpers.output.cache
