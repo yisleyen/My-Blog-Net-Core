@@ -598,3 +598,4 @@ C:\Yusuf\project\My-Blog-Net-Core\WebUI\bin\Debug\net5.0\Microsoft.AspNetCore.Cr
 C:\Yusuf\project\My-Blog-Net-Core\WebUI\bin\Debug\net5.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
 C:\Yusuf\project\My-Blog-Net-Core\WebUI\bin\Debug\net5.0\Microsoft.Extensions.Identity.Core.dll
 C:\Yusuf\project\My-Blog-Net-Core\WebUI\bin\Debug\net5.0\Microsoft.Extensions.Identity.Stores.dll
+C:\Yusuf\project\My-Blog-Net-Core\WebUI\obj\Debug\net5.0\Razor\Views\SignUp\Index.cshtml.g.cs
