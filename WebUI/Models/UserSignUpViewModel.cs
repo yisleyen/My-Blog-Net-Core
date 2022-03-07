@@ -10,7 +10,7 @@ namespace WebUI.Models
 
         [Display(Name = "Ad - Soyad")]
         [Required(ErrorMessage = "Ad - Soyad giriniz")]
-        public string NormalizedUserName { get; set; }
+        public string NameSurname { get; set; }
 
         [Display(Name = "Şifre")]
         [Required(ErrorMessage = "Şifre giriniz")]

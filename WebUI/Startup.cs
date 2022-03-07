@@ -29,7 +29,11 @@ namespace WebUI
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddDbContext<Context>();
-            services.AddIdentity<AppUser, AppRole>().AddEntityFrameworkStores<Context>();
+            services.AddIdentity<AppUser, AppRole>(x =>
+            {
+                x.Password.RequireUppercase = false; // Büyük harf zorunluluðunu kaldýrýldý
+                x.Password.RequiredLength = 8; // En az 8 karakter uzunluðu olarak ayarlandý
+            }).AddEntityFrameworkStores<Context>();
 
             services.AddControllersWithViews();
 

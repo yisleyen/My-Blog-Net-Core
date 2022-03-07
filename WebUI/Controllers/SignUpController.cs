@@ -32,7 +32,7 @@ namespace WebUI.Controllers
                 {
                     Email = userSignUpViewModel.Email,
                     UserName = userSignUpViewModel.UserName,
-                    NormalizedUserName = userSignUpViewModel.NormalizedUserName
+                    NameSurname = userSignUpViewModel.NameSurname
                 };
 
                 var result = await _userManager.CreateAsync(appUser, userSignUpViewModel.Password);
