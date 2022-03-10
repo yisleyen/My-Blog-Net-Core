@@ -1,5 +1,6 @@
 ﻿using Business.Abstract;
 using Business.Concrete;
+using DataAccess.Concrete;
 using DataAccess.EntityFramework;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
@@ -16,10 +17,13 @@ namespace WebUI.Controllers
         CategoryManager categoryManager = new CategoryManager(new EfCategoryRepository());
         WriterManager writerManager = new WriterManager(new EfWriterRepository());
 
+        Context c = new Context();
+
         [AllowAnonymous]
         public IActionResult Index()
         {
-            var userMail = User.Identity.Name;
+            var userName = User.Identity.Name;
+            var userMail = c.Users.Where(x => x.UserName == userName).Select(y => y.Email).FirstOrDefault();
             var user = writerManager.GetWriterByFilter(userMail);
 
             ViewBag.TotalBlogCount = blogManager.GetAll().Count();

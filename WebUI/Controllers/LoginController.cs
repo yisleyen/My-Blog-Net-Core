@@ -44,34 +44,5 @@ namespace WebUI.Controllers
 
             return View();
         }
-
-        //[HttpPost]
-        //public async Task<IActionResult> Index(Writer writer)
-        //{
-        //    Context context = new Context();
-
-        //    var loginValue = context.Writers.FirstOrDefault(x => x.Email == writer.Email && x.Password == writer.Password);
-
-        //    if (loginValue != null) // login işlemi başarılı
-        //    {
-        //        var claims = new List<Claim>
-        //        {
-        //            new Claim(ClaimTypes.Name, writer.Email)
-        //        };
-
-        //        var userIdentity = new ClaimsIdentity(claims, "a");
-
-        //        ClaimsPrincipal claimsPrincipal = new ClaimsPrincipal(userIdentity);
-
-        //        await HttpContext.SignInAsync(claimsPrincipal);
-
-        //        return RedirectToAction("Index", "Dashboard");
-        //    }
-        //    else // login işlemi başarısız
-        //    {
-        //        return View();
-        //    }
-
-        //}
     }
 }
