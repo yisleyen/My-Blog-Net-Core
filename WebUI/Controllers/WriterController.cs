@@ -46,7 +46,9 @@ namespace WebUI.Controllers
         [HttpGet]
         public IActionResult EditProfile()
         {
-            var userMail = User.Identity.Name;
+            Context c = new Context();
+            var userName = User.Identity.Name;
+            var userMail = c.Users.Where(x => x.UserName == userName).Select(y => y.Email).FirstOrDefault();
             var user = writerManager.GetWriterByFilter(userMail);
             var writer = writerManager.GetById(user[0].Id);
 
