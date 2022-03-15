@@ -5,6 +5,7 @@ using DataAccess.EntityFramework;
 using Entity.Concrete;
 using FluentValidation.Results;
 using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
@@ -18,6 +19,13 @@ namespace WebUI.Controllers
     public class WriterController : Controller
     {
         WriterManager writerManager = new WriterManager(new EfWriterRepository());
+
+        private readonly UserManager<AppUser> _userManager;
+
+        public WriterController(UserManager<AppUser> userManager)
+        {
+            _userManager = userManager;
+        }
 
         public IActionResult Index()
         {
@@ -46,11 +54,14 @@ namespace WebUI.Controllers
         [HttpGet]
         public IActionResult EditProfile()
         {
-            Context c = new Context();
+            //Context c = new Context();
+            //var userName = User.Identity.Name;
+            //var userMail = c.Users.Where(x => x.UserName == userName).Select(y => y.Email).FirstOrDefault();
+            //var user = writerManager.GetWriterByFilter(userMail);
+            //var writer = writerManager.GetById(user[0].Id);
+
             var userName = User.Identity.Name;
-            var userMail = c.Users.Where(x => x.UserName == userName).Select(y => y.Email).FirstOrDefault();
-            var user = writerManager.GetWriterByFilter(userMail);
-            var writer = writerManager.GetById(user[0].Id);
+            var writer = _userManager.FindByNameAsync(userName);
 
             return View(writer);
         }
