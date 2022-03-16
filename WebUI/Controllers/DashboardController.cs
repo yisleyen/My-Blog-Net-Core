@@ -2,7 +2,9 @@
 using Business.Concrete;
 using DataAccess.Concrete;
 using DataAccess.EntityFramework;
+using Entity.Concrete;
 using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
@@ -15,19 +17,21 @@ namespace WebUI.Controllers
     {
         BlogManager blogManager = new BlogManager(new EfBlogRepository());
         CategoryManager categoryManager = new CategoryManager(new EfCategoryRepository());
-        WriterManager writerManager = new WriterManager(new EfWriterRepository());
 
-        Context c = new Context();
+        private readonly UserManager<AppUser> _userManager;
 
-        [AllowAnonymous]
-        public IActionResult Index()
+        public DashboardController(UserManager<AppUser> userManager)
+        {
+            _userManager = userManager;
+        }
+
+        public async Task<IActionResult> Index()
         {
             var userName = User.Identity.Name;
-            var userMail = c.Users.Where(x => x.UserName == userName).Select(y => y.Email).FirstOrDefault();
-            var user = writerManager.GetWriterByFilter(userMail);
+            var user = await _userManager.FindByNameAsync(userName);
 
             ViewBag.TotalBlogCount = blogManager.GetAll().Count();
-            ViewBag.WriterBlogCount = blogManager.GetAllByWriter(user[0].Id).Count();
+            ViewBag.WriterBlogCount = blogManager.GetAllByWriter(user.Id    ).Count();
             ViewBag.CategoryCount = categoryManager.GetAll().Count();
 
             return View();
