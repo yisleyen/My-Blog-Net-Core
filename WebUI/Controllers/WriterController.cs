@@ -79,11 +79,16 @@ namespace WebUI.Controllers
                 writer.NameSurname = userUpdateViewModel.NameSurname;
                 writer.Email = userUpdateViewModel.Email;
 
+                if (!string.IsNullOrEmpty(userUpdateViewModel.Password))
+                {
+                    writer.PasswordHash = _userManager.PasswordHasher.HashPassword(writer, userUpdateViewModel.Password);
+                }
+
                 var result = await _userManager.UpdateAsync(writer);
 
                 if (result.Succeeded)
                 {
-                    return RedirectToAction("Index", "Dashboard");
+                    return RedirectToAction("LogOut", "Login");
                 }
                 else
                 {
