@@ -52,60 +52,47 @@ namespace WebUI.Controllers
         }
 
         [HttpGet]
-        public IActionResult EditProfile()
+        public async Task<IActionResult> EditProfile()
         {
-            //Context c = new Context();
-            //var userName = User.Identity.Name;
-            //var userMail = c.Users.Where(x => x.UserName == userName).Select(y => y.Email).FirstOrDefault();
-            //var user = writerManager.GetWriterByFilter(userMail);
-            //var writer = writerManager.GetById(user[0].Id);
-
             var userName = User.Identity.Name;
-            var writer = _userManager.FindByNameAsync(userName);
+            var writer = await _userManager.FindByNameAsync(userName);
 
-            return View(writer);
+            UserUpdateViewModel userUpdateViewModel = new()
+            {
+                Email = writer.Email,
+                UserName = writer.UserName,
+                NameSurname = writer.NameSurname
+            };
+
+            return View(userUpdateViewModel);
         }
 
         [HttpPost]
-        public IActionResult EditProfile(AddProfileImage p)
+        public async Task<IActionResult> EditProfile(UserUpdateViewModel userUpdateViewModel)
         {
-            Writer writer = new Writer();
-
-            if (p.Image != null)
+            if (ModelState.IsValid)
             {
-                WriterValidator writerValidator = new WriterValidator();
-                ValidationResult validationResult = writerValidator.Validate(writer);
+                var userName = User.Identity.Name;
 
-                if (validationResult.IsValid)
+                var writer = await _userManager.FindByNameAsync(userName);
+
+                writer.NameSurname = userUpdateViewModel.NameSurname;
+                writer.Email = userUpdateViewModel.Email;
+
+                var result = await _userManager.UpdateAsync(writer);
+
+                if (result.Succeeded)
                 {
-                    var extension = Path.GetExtension(p.Image.FileName);
-                    var newImageName = Guid.NewGuid() + extension;
-                    var location = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/images/", newImageName);
-                    var stream = new FileStream(location, FileMode.Create);
-                    p.Image.CopyTo(stream);
-
-                    writer.Id = p.Id;
-                    writer.Status = true;
-                    writer.CreatedDate = DateTime.Now;
-                    writer.Email = p.Email;
-                    writer.Name = p.Name;
-                    writer.Password = p.Password;
-                    writer.ConfirmPassword = p.ConfirmPassword;
-                    writer.About = p.About;
-                    writer.Image = newImageName;
-                    writerManager.Update(writer);
-
                     return RedirectToAction("Index", "Dashboard");
                 }
                 else
                 {
-                    foreach (var item in validationResult.Errors)
+                    foreach (var item in result.Errors)
                     {
-                        ModelState.AddModelError(item.PropertyName, item.ErrorMessage);
+                        ModelState.AddModelError("", item.Description);
                     }
                 }
             }
-            
 
             return View();
         }

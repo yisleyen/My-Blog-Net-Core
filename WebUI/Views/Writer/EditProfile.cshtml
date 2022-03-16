@@ -1,5 +1,4 @@
-﻿@using Entity.Concrete
-@model Writer
+﻿@model UserUpdateViewModel
 @{
     ViewData["Title"] = "EditProfile";
     Layout = "~/Views/Shared/_WriterLayout.cshtml";
@@ -12,42 +11,21 @@
     <div class="col-12 grid-margin stretch-card">
         <div class="card">
             <div class="card-body">
-                @using (Html.BeginForm("EditProfile", "Writer", FormMethod.Post, new { enctype = "multipart/form-data" }))
-                {
-                    @Html.HiddenFor(x => x.Id, new { @class = "form-control" })
+                <form method="post" action="/Writer/EditProfile/">
                     <div class="form-group">
                         @Html.Label("Adınız")
-                        @Html.TextBoxFor(x => x.Name, new { placeholder = "Adınız", @class = "form-control" })
-                        @Html.ValidationMessageFor(x => x.Name, "", new { @class = "text-danger" })
+                        <input type="text" name="UserName" value="@Model.UserName" class="form-control" />
+                    </div>
+                    <div class="form-group">
+                        @Html.Label("Adınız Soyadınız")
+                        <input type="text" name="NameSurname" value="@Model.NameSurname" class="form-control" />
                     </div>
                     <div class="form-group">
                         @Html.Label("E-Posta Adresiniz")
-                        @Html.TextBoxFor(x => x.Email, new { placeholder = "E-Posta Adresiniz", @class = "form-control" })
-                        @Html.ValidationMessageFor(x => x.Email, "", new { @class = "text-danger" })
-                    </div>
-                    <div class="form-group">
-                        @Html.Label("Şifreniz")
-                        @Html.PasswordFor(x => x.Password, new { placeholder = "Şifreniz", @class = "form-control" })
-                        @Html.ValidationMessageFor(x => x.Password, "", new { @class = "text-danger" })
-                    </div>
-                    <div class="form-group">
-                        @Html.Label("Şifre Tekrar")
-                        @Html.PasswordFor(x => x.ConfirmPassword, new { placeholder = "Şifrenizi Tekrar Giriniz", @class = "form-control" })
-                        @Html.ValidationMessageFor(x => x.ConfirmPassword, "", new { @class = "text-danger" })
-                    </div>
-                    <div class="form-group">
-                        <label>Avatar</label>
-                        <div class="input-group col-xs-12">
-                            <input type="file" class="form-control file-upload-info" name="Image">
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        @Html.Label("Hakkınızda")
-                        @Html.TextAreaFor(x => x.About, 15, 5, new { placeholder = "Hakkınızda", @class = "form-control" })
-                        @Html.ValidationMessageFor(x => x.About, "", new { @class = "text-danger" })
+                        <input type="email" name="Email" value="@Model.Email" class="form-control" />
                     </div>
                     <button type="submit" class="btn btn-gradient-primary mr-2">Güncelle</button>
-                }
+                </form>
             </div>
         </div>
     </div>
