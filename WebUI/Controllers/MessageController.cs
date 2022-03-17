@@ -1,7 +1,9 @@
 ﻿using Business.Abstract;
 using Business.Concrete;
 using DataAccess.EntityFramework;
+using Entity.Concrete;
 using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
@@ -14,14 +16,20 @@ namespace WebUI.Controllers
     public class MessageController : Controller
     {
         Message2Manager messageManager = new Message2Manager(new EfMessage2Repository());
-        WriterManager writerManager = new WriterManager(new EfWriterRepository());
 
-        public IActionResult List()
+        private readonly UserManager<AppUser> _userManager;
+
+        public MessageController(UserManager<AppUser> userManager)
         {
-            var userMail = User.Identity.Name;
-            var user = writerManager.GetWriterByFilter(userMail);
+            _userManager = userManager;
+        }
 
-            var messages = messageManager.GetInboxListByWriter(user[0].Id);
+        public async Task<IActionResult> List()
+        {
+            var userName = User.Identity.Name;
+            var user = await _userManager.FindByNameAsync(userName);
+
+            var messages = messageManager.GetInboxListByWriter(user.Id);
 
             return View(messages);
         }

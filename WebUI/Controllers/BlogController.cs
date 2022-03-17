@@ -5,6 +5,7 @@ using DataAccess.EntityFramework;
 using Entity.Concrete;
 using FluentValidation.Results;
 using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using System;
@@ -18,6 +19,13 @@ namespace WebUI.Controllers
     {
         BlogManager blogManager = new BlogManager(new EfBlogRepository());
         WriterManager writerManager = new WriterManager(new EfWriterRepository());
+
+        private readonly UserManager<AppUser> _userManager;
+
+        public BlogController(UserManager<AppUser> userManager)
+        {
+            _userManager = userManager;
+        }
 
         [AllowAnonymous]
         public IActionResult Index()
@@ -40,12 +48,12 @@ namespace WebUI.Controllers
             return View(blog);
         }
 
-        public IActionResult WriterBlogList()
+        public async Task<IActionResult> WriterBlogList()
         {
-            var userMail = User.Identity.Name;
-            var user = writerManager.GetWriterByFilter(userMail);
+            var userName = User.Identity.Name;
+            var user = await _userManager.FindByNameAsync(userName);
 
-            var blogList = blogManager.GetAllWithCategoryByWriter(user[0].Id);
+            var blogList = blogManager.GetAllWithCategoryByWriter(user.Id);
 
             return View(blogList);
         }
@@ -66,17 +74,17 @@ namespace WebUI.Controllers
         }
 
         [HttpPost]
-        public IActionResult Add(Blog blog)
+        public async Task<IActionResult> Add(Blog blog)
         {
-            var userMail = User.Identity.Name;
-            var user = writerManager.GetWriterByFilter(userMail);
+            var userName = User.Identity.Name;
+            var user = await _userManager.FindByNameAsync(userName);
 
             BlogValidator blogValidator = new BlogValidator();
             ValidationResult validationResult = blogValidator.Validate(blog);
 
             if (validationResult.IsValid)
             {
-                blog.WriterId = user[0].Id;
+                blog.WriterId = user.Id;
                 blog.Status = true;
                 blog.CreatedDate = DateTime.Now;
                 blogManager.Insert(blog);

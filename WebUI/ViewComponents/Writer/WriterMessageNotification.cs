@@ -20,10 +20,9 @@ namespace WebUI.ViewComponents.Writer
         public IViewComponentResult Invoke()
         {
             var userName = User.Identity.Name;
-            var userMail = c.Users.Where(x => x.UserName == userName).Select(y => y.Email).FirstOrDefault();
-            var user = writerManager.GetWriterByFilter(userMail);
+            var userId = c.Users.Where(x => x.UserName == userName).Select(y => y.Id).FirstOrDefault();
 
-            var messages = messageManager.GetInboxListByWriter(user[0].Id);
+            var messages = messageManager.GetInboxListByWriter(userId);
 
             ViewBag.TotalMessageCount = messages.Count;
 
