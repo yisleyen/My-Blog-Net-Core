@@ -1,4 +1,5 @@
 ﻿using Business.Abstract;
+using Business.Concrete;
 using DataAccess.Concrete;
 using DataAccess.EntityFramework;
 using Microsoft.AspNetCore.Mvc;
@@ -11,7 +12,7 @@ namespace WebUI.ViewComponents.Writer
 {
     public class WriterInfoOnDashboard : ViewComponent
     {
-        WriterManager writerManager = new WriterManager(new EfWriterRepository());
+        UserManager userManager = new UserManager(new EfUserRepository());
 
         Context c = new Context();
 
@@ -20,7 +21,7 @@ namespace WebUI.ViewComponents.Writer
             var userName = User.Identity.Name;
             var userId = c.Users.Where(x => x.UserName == userName).Select(y => y.Id).FirstOrDefault();
 
-            var writer = writerManager.GetById(userId);
+            var writer = userManager.GetById(userId);
 
             return View(writer);
         }
