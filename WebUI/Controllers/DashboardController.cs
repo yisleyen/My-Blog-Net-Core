@@ -30,6 +30,8 @@ namespace WebUI.Controllers
             var userName = User.Identity.Name;
             var user = await _userManager.FindByNameAsync(userName);
 
+            ViewBag.NameSurname = user.NameSurname;
+
             ViewBag.TotalBlogCount = blogManager.GetAll().Count();
             ViewBag.WriterBlogCount = blogManager.GetAllByWriter(user.Id).Count();
             ViewBag.CategoryCount = categoryManager.GetAll().Count();
