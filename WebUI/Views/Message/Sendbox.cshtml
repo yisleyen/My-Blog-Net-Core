@@ -1,9 +1,10 @@
 ﻿@using Entity.Concrete
 @model List<Message2>
 @{
-    ViewData["Title"] = "Gelen Kutusu";
+    ViewData["Title"] = "Giden Kutusu";
     Layout = "~/Views/Shared/_WriterLayout.cshtml";
 }
+
 
 <div class="page-header">
     <h3 class="page-title">@ViewData["Title"]</h3>
@@ -29,7 +30,7 @@
                         <tr>
                             <td>@item.Id</td>
                             <td>@item.Subject</td>
-                            <td>@item.SenderUser.NameSurname</td>
+                            <td>@item.ReceiverUser.NameSurname</td>
                             <td>@item.CreatedDate.ToString("dd MMMM yyyy")</td>
                             <td>
                                 @if (item.Status)

@@ -38,6 +38,11 @@ namespace Business.Concrete
             return _messageDal.GetAllWithWriterByMessage(id);
         }
 
+        public List<Message2> GetSendboxListByWriter(int id)
+        {
+            return _messageDal.GetAllSendboxWithWriterByMessage(id);
+        }
+
         public void Insert(Message2 entity)
         {
             _messageDal.Insert(entity);

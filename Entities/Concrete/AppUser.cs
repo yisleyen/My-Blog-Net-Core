@@ -10,5 +10,7 @@ namespace Entity.Concrete
     public class AppUser : IdentityUser<int>
     {
         public string NameSurname { get; set; }
+        public virtual ICollection<Message2> Sender { get; set; }
+        public virtual ICollection<Message2> Receiver { get; set; }
     }
 }

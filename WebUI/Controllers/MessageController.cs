@@ -69,5 +69,16 @@ namespace WebUI.Controllers
 
             return RedirectToAction("List");
         }
+
+        [HttpGet]
+        public async Task<IActionResult> Sendbox()
+        {
+            var userName = User.Identity.Name;
+            var user = await _userManager.FindByNameAsync(userName);
+
+            var messages = messageManager.GetSendboxListByWriter(user.Id);
+
+            return View(messages);
+        }
     }
 }
