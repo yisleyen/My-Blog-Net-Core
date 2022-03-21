@@ -12,22 +12,24 @@
     <div class="col-12 grid-margin stretch-card">
         <div class="card">
             <div class="card-body">
-                @using (Html.BeginForm("SendMessage", "Message", FormMethod.Post))
-                {
+                <form method="post" action="/Message/SendMessage/">
                     <div class="form-group">
                         @Html.Label("Alıcı")
-                        @Html.TextBoxFor(x => x.ReceiverID, new { placeholder = "Alıcı e-posta adresi", @class = "form-control" })
+                        @*@Html.TextBoxFor(x => x.ReceiverID, new { placeholder = "Alıcı e-posta adresi", @class = "form-control" })*@
+                        <input type="text" id="email" name="email" placeholder="Alıcı e-posta adresi" class="form-control" />
                     </div>
                     <div class="form-group">
                         @Html.Label("Konu")
-                        @Html.TextBoxFor(x => x.Subject, new { placeholder = "Konu", @class = "form-control" })
+                        @*@Html.TextBoxFor(x => x.Subject, new { placeholder = "Konu", @class = "form-control" })*@
+                        <input type="text" id="subject" name="subject" placeholder="Konu" class="form-control" />
                     </div>
                     <div class="form-group">
                         @Html.Label("Mesaj İçeriği")
-                        @Html.TextAreaFor(x => x.Detail, 15, 3, new { placeholder = "Mesaj İçeriği", @class = "form-control" })
+                        @*@Html.TextAreaFor(x => x.Detail, 15, 3, new { placeholder = "Mesaj İçeriği", @class = "form-control" })*@
+                        <textarea name="detail" id="detail" placeholder="Mesaj İçeriği" class="form-control" cols="15" rows="3"></textarea>
                     </div>
                     <button type="submit" class="btn btn-gradient-primary mr-2">Ekle</button>
-                }
+                </form>
             </div>
         </div>
     </div>

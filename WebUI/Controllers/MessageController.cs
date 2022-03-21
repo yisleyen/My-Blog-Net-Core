@@ -48,18 +48,22 @@ namespace WebUI.Controllers
 
 
         [HttpPost]
-        public async Task<IActionResult> SendMessage(Message2 message)
+        public async Task<IActionResult> SendMessage(string email, string subject, string detail)
         {
             var userName = User.Identity.Name;
             var user = await _userManager.FindByNameAsync(userName);
 
+            Message2 message = new Message2();
 
-            var receiverID = await _userManager.FindByEmailAsync(message.ReceiverID.ToString());
+            var receiver = await _userManager.FindByEmailAsync(email);
 
             message.SenderID = user.Id;
             message.ReceiverID = 2;
             message.Status = true;
             message.CreatedDate = DateTime.Now;
+            message.Subject = subject;
+            message.Detail = detail;
+            message.ReceiverID = receiver.Id;
 
             messageManager.Insert(message);
 
