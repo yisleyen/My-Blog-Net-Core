@@ -12,7 +12,6 @@ using System.Threading.Tasks;
 
 namespace WebUI.Controllers
 {
-    [AllowAnonymous]
     public class MessageController : Controller
     {
         Message2Manager messageManager = new Message2Manager(new EfMessage2Repository());
@@ -39,6 +38,32 @@ namespace WebUI.Controllers
             var messaga = messageManager.GetById(id);
 
             return View(messaga);
+        }
+
+        [HttpGet]
+        public IActionResult SendMessage()
+        {
+            return View();
+        }
+
+
+        [HttpPost]
+        public async Task<IActionResult> SendMessage(Message2 message)
+        {
+            var userName = User.Identity.Name;
+            var user = await _userManager.FindByNameAsync(userName);
+
+
+            var receiverID = await _userManager.FindByEmailAsync(message.ReceiverID.ToString());
+
+            message.SenderID = user.Id;
+            message.ReceiverID = 2;
+            message.Status = true;
+            message.CreatedDate = DateTime.Now;
+
+            messageManager.Insert(message);
+
+            return RedirectToAction("List");
         }
     }
 }
