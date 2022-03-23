@@ -1,4 +1,6 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Business.Concrete;
+using DataAccess.EntityFramework;
+using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -6,11 +8,18 @@ using System.Threading.Tasks;
 
 namespace WebUI.Areas.Admin.Controllers
 {
+    [Area("Admin")]
     public class MessageController : Controller
     {
-        public IActionResult Index()
+        Message2Manager message2Manager = new Message2Manager(new EfMessage2Repository());
+
+        public IActionResult Inbox()
         {
-            return View();
+            var messages = message2Manager.GetAll();
+
+            ViewBag.MessageCount = messages.Count();
+
+            return View(messages);
         }
     }
 }

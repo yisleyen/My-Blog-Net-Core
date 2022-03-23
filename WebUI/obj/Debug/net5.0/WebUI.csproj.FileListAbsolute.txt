@@ -601,3 +601,4 @@ C:\Yusuf\project\My-Blog-Net-Core\WebUI\bin\Debug\net5.0\Microsoft.Extensions.Id
 C:\Yusuf\project\My-Blog-Net-Core\WebUI\obj\Debug\net5.0\Razor\Views\SignUp\Index.cshtml.g.cs
 C:\Yusuf\project\My-Blog-Net-Core\WebUI\obj\Debug\net5.0\Razor\Views\Message\SendMessage.cshtml.g.cs
 C:\Yusuf\project\My-Blog-Net-Core\WebUI\obj\Debug\net5.0\Razor\Views\Message\Sendbox.cshtml.g.cs
+C:\Yusuf\project\My-Blog-Net-Core\WebUI\obj\Debug\net5.0\Razor\Areas\Admin\Views\Message\Inbox.cshtml.g.cs
