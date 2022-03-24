@@ -18,7 +18,7 @@
                         @foreach (var item in Model)
                         {
                             <tr class="read">
-                                <td class="mail-ontact">@item.SenderUser.Name</td>
+                                <td class="mail-ontact">@item.ReceiverUser.Name</td>
                                 <td class="mail-subject"><a href="mail_detail.html">@item.Detail</a></td>
                                 <td class="text-right mail-date">@item.CreatedDate.ToString("dd MMMM yyyy")</td>
                             </tr>

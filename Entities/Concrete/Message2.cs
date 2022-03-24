@@ -17,7 +17,7 @@ namespace Entity.Concrete
         public string Detail { get; set; }
         public DateTime CreatedDate { get; set; }
         public bool Status { get; set; }
-        public AppUser SenderUser { get; set; }
-        public AppUser ReceiverUser { get; set; }
+        public Writer SenderUser { get; set; }
+        public Writer ReceiverUser { get; set; }
     }
 }
