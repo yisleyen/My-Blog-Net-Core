@@ -45,5 +45,33 @@ namespace WebUI.Areas.Admin.Controllers
 
             return View(messages);
         }
+
+        [HttpGet]
+        public IActionResult Add()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> Add(string email, string subject, string detail)
+        {
+            var userName = User.Identity.Name;
+            var user = await _userManager.FindByNameAsync(userName);
+
+            Message2 message = new Message2();
+
+            var receiver = await _userManager.FindByEmailAsync(email);
+
+            message.SenderID = user.Id;
+            message.Status = true;
+            message.CreatedDate = DateTime.Now;
+            message.Subject = subject;
+            message.Detail = detail;
+            message.ReceiverID = receiver.Id;
+
+            message2Manager.Insert(message);
+
+            return RedirectToAction("Sendbox", "Message");
+        }
     }
 }

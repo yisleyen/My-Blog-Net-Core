@@ -58,7 +58,6 @@ namespace WebUI.Controllers
             var receiver = await _userManager.FindByEmailAsync(email);
 
             message.SenderID = user.Id;
-            message.ReceiverID = 2;
             message.Status = true;
             message.CreatedDate = DateTime.Now;
             message.Subject = subject;
