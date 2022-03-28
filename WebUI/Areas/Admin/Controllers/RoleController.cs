@@ -71,5 +71,35 @@ namespace WebUI.Areas.Admin.Controllers
 
             return View();
         }
+
+        [HttpGet]
+        public IActionResult Update(int id)
+        {
+            var roles = _roleManager.Roles.FirstOrDefault(x => x.Id == id);
+
+            UpdateRoleViewModel updateRoleViewModel = new UpdateRoleViewModel();
+
+            updateRoleViewModel.Id = roles.Id;
+            updateRoleViewModel.Name = roles.Name;
+
+            return View(updateRoleViewModel);
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> Update(UpdateRoleViewModel updateRoleViewModel)
+        {
+            var roles = _roleManager.Roles.FirstOrDefault(x => x.Id == updateRoleViewModel.Id);
+
+            roles.Name = updateRoleViewModel.Name;
+
+            var result = await _roleManager.UpdateAsync(roles);
+
+            if (result.Succeeded)
+            {
+                return RedirectToAction("Index");
+            }
+
+            return View();
+        }
     }
 }
