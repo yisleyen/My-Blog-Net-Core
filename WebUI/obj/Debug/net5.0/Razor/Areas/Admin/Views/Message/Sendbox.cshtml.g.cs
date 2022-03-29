@@ -13,6 +13,20 @@ namespace AspNetCore
     using Microsoft.AspNetCore.Mvc.Rendering;
     using Microsoft.AspNetCore.Mvc.ViewFeatures;
 #nullable restore
+#line 1 "C:\Yusuf\project\My-Blog-Net-Core\WebUI\Areas\Admin\Views\_ViewImports.cshtml"
+using WebUI;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 2 "C:\Yusuf\project\My-Blog-Net-Core\WebUI\Areas\Admin\Views\_ViewImports.cshtml"
+using WebUI.Models;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
 #line 1 "C:\Yusuf\project\My-Blog-Net-Core\WebUI\Areas\Admin\Views\Message\Sendbox.cshtml"
 using Entity.Concrete;
 
@@ -20,6 +34,7 @@ using Entity.Concrete;
 #line hidden
 #nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"ec7f8dc58c28f8da889ce5a2d21b2c303edab040", @"/Areas/Admin/Views/Message/Sendbox.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"43d8308283e147aceb640f85e77cb8c039e61219", @"/Areas/Admin/Views/_ViewImports.cshtml")]
     public class Areas_Admin_Views_Message_Sendbox : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<List<Message2>>
     {
         #pragma warning disable 1998

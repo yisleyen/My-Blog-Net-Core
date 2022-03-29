@@ -12,9 +12,47 @@ namespace AspNetCore
     using Microsoft.AspNetCore.Mvc;
     using Microsoft.AspNetCore.Mvc.Rendering;
     using Microsoft.AspNetCore.Mvc.ViewFeatures;
+#nullable restore
+#line 1 "C:\Yusuf\project\My-Blog-Net-Core\WebUI\Areas\Admin\Views\_ViewImports.cshtml"
+using WebUI;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 2 "C:\Yusuf\project\My-Blog-Net-Core\WebUI\Areas\Admin\Views\_ViewImports.cshtml"
+using WebUI.Models;
+
+#line default
+#line hidden
+#nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"15f8f8876d28a61f6bf51f90ce27359448e286b1", @"/Areas/Admin/Views/Metric/Index.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"43d8308283e147aceb640f85e77cb8c039e61219", @"/Areas/Admin/Views/_ViewImports.cshtml")]
     public class Areas_Admin_Views_Metric_Index : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<dynamic>
     {
+        private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_0 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("role", new global::Microsoft.AspNetCore.Html.HtmlString("form"), global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
+        #line hidden
+        #pragma warning disable 0649
+        private global::Microsoft.AspNetCore.Razor.Runtime.TagHelpers.TagHelperExecutionContext __tagHelperExecutionContext;
+        #pragma warning restore 0649
+        private global::Microsoft.AspNetCore.Razor.Runtime.TagHelpers.TagHelperRunner __tagHelperRunner = new global::Microsoft.AspNetCore.Razor.Runtime.TagHelpers.TagHelperRunner();
+        #pragma warning disable 0169
+        private string __tagHelperStringValueBuffer;
+        #pragma warning restore 0169
+        private global::Microsoft.AspNetCore.Razor.Runtime.TagHelpers.TagHelperScopeManager __backed__tagHelperScopeManager = null;
+        private global::Microsoft.AspNetCore.Razor.Runtime.TagHelpers.TagHelperScopeManager __tagHelperScopeManager
+        {
+            get
+            {
+                if (__backed__tagHelperScopeManager == null)
+                {
+                    __backed__tagHelperScopeManager = new global::Microsoft.AspNetCore.Razor.Runtime.TagHelpers.TagHelperScopeManager(StartTagHelperWritingScope, EndTagHelperWritingScope);
+                }
+                return __backed__tagHelperScopeManager;
+            }
+        }
+        private global::Microsoft.AspNetCore.Mvc.TagHelpers.FormTagHelper __Microsoft_AspNetCore_Mvc_TagHelpers_FormTagHelper;
+        private global::Microsoft.AspNetCore.Mvc.TagHelpers.RenderAtEndOfFormTagHelper __Microsoft_AspNetCore_Mvc_TagHelpers_RenderAtEndOfFormTagHelper;
         #pragma warning disable 1998
         public async override global::System.Threading.Tasks.Task ExecuteAsync()
         {
@@ -100,15 +138,31 @@ Write(await Component.InvokeAsync("StatisticAdmin"));
                         </div>
                     </div>
                     <div class=""chat-form"">
-                        <form role=""form"">
+                        ");
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "15f8f8876d28a61f6bf51f90ce27359448e286b17540", async() => {
+                WriteLiteral(@"
                             <div class=""form-group"">
-                                <textarea class=""form");
-            WriteLiteral(@"-control"" placeholder=""Message""></textarea>
+                                <textarea class=""form-control"" placeholder=""Message""></textarea>
                             </div>
                             <div class=""text-right"">
                                 <button type=""submit"" class=""btn btn-sm btn-primary m-t-n-xs""><strong>Send message</strong></button>
                             </div>
-                        </form>
+                        ");
+            }
+            );
+            __Microsoft_AspNetCore_Mvc_TagHelpers_FormTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.TagHelpers.FormTagHelper>();
+            __tagHelperExecutionContext.Add(__Microsoft_AspNetCore_Mvc_TagHelpers_FormTagHelper);
+            __Microsoft_AspNetCore_Mvc_TagHelpers_RenderAtEndOfFormTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.TagHelpers.RenderAtEndOfFormTagHelper>();
+            __tagHelperExecutionContext.Add(__Microsoft_AspNetCore_Mvc_TagHelpers_RenderAtEndOfFormTagHelper);
+            __tagHelperExecutionContext.AddHtmlAttribute(__tagHelperAttribute_0);
+            await __tagHelperRunner.RunAsync(__tagHelperExecutionContext);
+            if (!__tagHelperExecutionContext.Output.IsContentModified)
+            {
+                await __tagHelperExecutionContext.SetOutputContentAsync();
+            }
+            Write(__tagHelperExecutionContext.Output);
+            __tagHelperExecutionContext = __tagHelperScopeManager.End();
+            WriteLiteral(@"
                     </div>
                 </div>
             </div>
@@ -126,15 +180,15 @@ Write(await Component.InvokeAsync("StatisticAdmin"));
                                 <button type=""button"" class=""btn btn-primary m-r-sm"">28</button>
                                 Posts
                             </td>
-                            <");
-            WriteLiteral(@"td>
+                            <td>
                                 <button type=""button"" class=""btn btn-info m-r-sm"">15</button>
                                 Comments
                             </td>
                         </tr>
                         <tr>
                             <td>
-                                <button type=""button"" class=""btn btn-info m-r-sm"">20</button>
+                                <button type=""button"" class=""btn");
+            WriteLiteral(@" btn-info m-r-sm"">20</button>
                                 News
                             </td>
                             <td>
@@ -148,15 +202,15 @@ Write(await Component.InvokeAsync("StatisticAdmin"));
                         </tr>
                         <tr>
                             <td>
-                                <button type=""button"" class=""btn btn-w");
-            WriteLiteral(@"arning m-r-sm"">20</button>
+                                <button type=""button"" class=""btn btn-warning m-r-sm"">20</button>
                                 Albums
                             </td>
                             <td>
                                 <button type=""button"" class=""btn btn-default m-r-sm"">40</button>
                                 Groups
                             </td>
-                            <td>
+                          ");
+            WriteLiteral(@"  <td>
                                 <button type=""button"" class=""btn btn-warning m-r-sm"">30</button>
                                 Permissions
                             </td>
@@ -172,8 +226,10 @@ Write(await Component.InvokeAsync("StatisticAdmin"));
                             <div class=""m-b-sm"">
                                 <img alt=""image"" class=""rounded-circle"" src=""img/a8.jpg"">
                             </div>
-      ");
-            WriteLiteral("                      <p class=\"font-bold\">Consectetur adipisicing</p>\r\n\r\n                            <div class=\"text-center\">\r\n                                <a");
+                            <p class=""font-bold"">Consectetur adipisicing</p>
+
+                            <div class=""text-center"">
+                                <a");
             BeginWriteAttribute("href", " href=\"", 6569, "\"", 6576, 0);
             EndWriteAttribute();
             WriteLiteral(" class=\"btn btn-xs btn-white\"><i class=\"fa fa-thumbs-up\"></i> Like </a>\r\n                                <a");

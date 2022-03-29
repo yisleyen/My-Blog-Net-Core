@@ -13,6 +13,20 @@ namespace AspNetCore
     using Microsoft.AspNetCore.Mvc.Rendering;
     using Microsoft.AspNetCore.Mvc.ViewFeatures;
 #nullable restore
+#line 1 "C:\Yusuf\project\My-Blog-Net-Core\WebUI\Areas\Admin\Views\_ViewImports.cshtml"
+using WebUI;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 2 "C:\Yusuf\project\My-Blog-Net-Core\WebUI\Areas\Admin\Views\_ViewImports.cshtml"
+using WebUI.Models;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
 #line 1 "C:\Yusuf\project\My-Blog-Net-Core\WebUI\Areas\Admin\Views\Message\Inbox.cshtml"
 using Entity.Concrete;
 
@@ -20,6 +34,7 @@ using Entity.Concrete;
 #line hidden
 #nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"080e5153fcd2ffe31d7c6d000c44cd69e9139065", @"/Areas/Admin/Views/Message/Inbox.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"43d8308283e147aceb640f85e77cb8c039e61219", @"/Areas/Admin/Views/_ViewImports.cshtml")]
     public class Areas_Admin_Views_Message_Inbox : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<List<Message2>>
     {
         #pragma warning disable 1998
