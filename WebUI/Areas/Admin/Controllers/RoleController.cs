@@ -137,5 +137,27 @@ namespace WebUI.Areas.Admin.Controllers
 
             return View(assignments);
         }
+
+        [HttpPost]
+        public async Task<IActionResult> Assign(List<RoleAssignViewModel> roleAssignViewModels)
+        {
+            var userid = (int)TempData["UserId"];
+
+            var user = _userManager.Users.FirstOrDefault(x => x.Id == userid);
+
+            foreach (var item in roleAssignViewModels)
+            {
+                if (item.Exists)
+                {
+                    await _userManager.AddToRoleAsync(user, item.Name);
+                }
+                else
+                {
+                    await _userManager.RemoveFromRoleAsync(user, item.Name);
+                }
+            }
+
+            return RedirectToAction("List");
+        }
     }
 }
