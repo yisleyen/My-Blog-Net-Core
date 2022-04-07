@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.31321.278
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.32014.148
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Entity", "Entities\Entity.csproj", "{BFE88E28-96AA-4042-A300-081BB17E4334}"
 EndProject
@@ -13,7 +13,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Core", "Core\Core.csproj", 
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebUI", "WebUI\WebUI.csproj", "{5E25B394-82C5-4B50-A637-7CA6B6ECF69D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "API", "API\API.csproj", "{9F149755-D1A2-48BA-8267-C4E04363A92D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "API", "API\API.csproj", "{9F149755-D1A2-48BA-8267-C4E04363A92D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Jwt", "Jwt\Jwt.csproj", "{F988D7EE-0953-4643-BFE5-413BE8B03326}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,6 +47,10 @@ Global
 		{9F149755-D1A2-48BA-8267-C4E04363A92D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9F149755-D1A2-48BA-8267-C4E04363A92D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9F149755-D1A2-48BA-8267-C4E04363A92D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F988D7EE-0953-4643-BFE5-413BE8B03326}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F988D7EE-0953-4643-BFE5-413BE8B03326}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F988D7EE-0953-4643-BFE5-413BE8B03326}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F988D7EE-0953-4643-BFE5-413BE8B03326}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
